@@ -59,13 +59,19 @@ export function Header({
     return `/${locale}${href === "/" ? "" : href}`;
   }
 
+  // Quechua labels are much longer; horizontal nav overflows the container.
+  const desktopNav = locale !== "quy";
+  const headerCta = locale === "quy" ? "Gratis prueba" : ctaLabel;
+
   return (
     <header className="sticky top-0 z-50 border-b border-border/70 bg-background/90 backdrop-blur-md">
-      <Container className="flex h-16 items-center gap-4 lg:h-[4.25rem] xl:gap-8">
+      <div className="mx-auto flex h-16 w-full max-w-[90rem] items-center gap-4 px-5 sm:px-6 lg:h-[4.25rem] lg:px-8 xl:gap-8">
         <Logo className="shrink-0" href={`/${locale}`} />
 
         <nav
-          className="hidden min-w-0 flex-1 items-center justify-center gap-1 xl:flex"
+          className={`min-w-0 flex-1 items-center justify-center gap-1 ${
+            desktopNav ? "hidden xl:flex" : "hidden"
+          }`}
           aria-label="Principal"
         >
           {nav.map((link) => {
@@ -88,14 +94,16 @@ export function Header({
           })}
         </nav>
 
-        <div className="hidden shrink-0 items-center gap-3 xl:flex">
+        <div
+          className={`shrink-0 items-center gap-3 ${desktopNav ? "hidden xl:flex" : "hidden"}`}
+        >
           <LanguageToggle current={locale} />
           <Button href={localized("/contacto")} variant="primary" className="!py-2.5 !text-[0.8125rem]">
-            {ctaLabel}
+            {headerCta}
           </Button>
         </div>
 
-        <div className="ml-auto flex items-center gap-2 xl:hidden">
+        <div className={`ml-auto flex items-center gap-2 ${desktopNav ? "xl:hidden" : ""}`}>
           <LanguageToggle current={locale} />
           <button
             ref={toggleRef}
@@ -125,10 +133,13 @@ export function Header({
             </span>
           </button>
         </div>
-      </Container>
+      </div>
 
       {open ? (
-        <div id={menuId} className="border-t border-border bg-surface xl:hidden">
+        <div
+          id={menuId}
+          className={`border-t border-border bg-surface ${desktopNav ? "xl:hidden" : ""}`}
+        >
           <Container className="flex flex-col gap-1 py-4">
             {nav.map((link, index) => (
               <Link
