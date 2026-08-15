@@ -61,10 +61,13 @@ export function Header({
 
   return (
     <header className="sticky top-0 z-50 border-b border-border/70 bg-background/90 backdrop-blur-md">
-      <Container className="flex h-16 items-center justify-between gap-4 lg:h-[4.25rem]">
-        <Logo href={`/${locale}`} />
+      <Container className="flex h-16 items-center gap-4 lg:h-[4.25rem] xl:gap-8">
+        <Logo className="shrink-0" href={`/${locale}`} />
 
-        <nav className="hidden items-center gap-0.5 xl:flex" aria-label="Principal">
+        <nav
+          className="hidden min-w-0 flex-1 items-center justify-center gap-1 xl:flex"
+          aria-label="Principal"
+        >
           {nav.map((link) => {
             const target = localized(link.href);
             const active =
@@ -73,7 +76,7 @@ export function Header({
               <Link
                 key={link.href}
                 href={target}
-                className={`rounded-[var(--radius-sm)] px-2.5 py-2 text-sm font-medium transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary ${
+                className={`rounded-[var(--radius-sm)] px-2 py-2 text-[0.8125rem] font-medium whitespace-nowrap transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary ${
                   active
                     ? "bg-primary-soft text-primary"
                     : "text-foreground/80 hover:bg-primary-soft/70 hover:text-primary"
@@ -85,14 +88,14 @@ export function Header({
           })}
         </nav>
 
-        <div className="hidden items-center gap-3 xl:flex">
+        <div className="hidden shrink-0 items-center gap-3 xl:flex">
           <LanguageToggle current={locale} />
           <Button href={localized("/contacto")} variant="primary" className="!py-2.5 !text-[0.8125rem]">
             {ctaLabel}
           </Button>
         </div>
 
-        <div className="flex items-center gap-2 xl:hidden">
+        <div className="ml-auto flex items-center gap-2 xl:hidden">
           <LanguageToggle current={locale} />
           <button
             ref={toggleRef}
