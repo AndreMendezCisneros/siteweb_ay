@@ -63,11 +63,11 @@ export function Header({
 
   return (
     <header className="sticky top-0 z-50 border-b border-border/70 bg-background/90 backdrop-blur-md">
-      <div className="mx-auto flex h-16 w-full max-w-[96rem] items-center gap-5 px-5 sm:px-6 lg:h-[4.25rem] lg:gap-8 lg:px-8">
+      <div className="mx-auto flex h-16 w-full max-w-[96rem] items-center gap-4 px-5 sm:px-6 lg:h-[4.25rem] lg:px-8">
         <Logo className="shrink-0" href={`/${locale}`} />
 
         <nav
-          className="ml-2 hidden min-w-0 flex-1 items-center justify-end gap-0.5 xl:ml-6 xl:flex"
+          className="hidden min-w-0 items-center gap-0.5 xl:flex"
           aria-label="Principal"
         >
           {nav.map((link) => {
@@ -92,7 +92,7 @@ export function Header({
           })}
         </nav>
 
-        <div className="hidden shrink-0 items-center gap-3 xl:flex">
+        <div className="ml-auto hidden shrink-0 items-center gap-3 xl:flex">
           <LanguageToggle current={locale} />
           <Button href={localized("/contacto")} variant="primary" className="!py-2.5 !text-[0.8125rem]">
             {headerCta}
