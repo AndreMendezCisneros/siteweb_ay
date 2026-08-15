@@ -11,7 +11,7 @@ export function LanguageToggle({ current }: { current: string }) {
 
   return (
     <div
-      className="flex items-center gap-0.5 rounded-full border border-border bg-surface p-0.5 text-sm font-semibold"
+      className="flex items-center gap-0.5 rounded-full border border-border bg-surface p-0.5 text-xs font-semibold"
       aria-label="Idioma / Language"
     >
       {locales.map((locale) => (

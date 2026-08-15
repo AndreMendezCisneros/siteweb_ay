@@ -29,8 +29,6 @@ export function Header({
   const menuId = useId();
   const toggleRef = useRef<HTMLButtonElement>(null);
   const firstLinkRef = useRef<HTMLAnchorElement>(null);
-  const compact = locale === "quy";
-  const headerCta = compact ? "Gratis prueba" : ctaLabel;
 
   if (prevPathname !== pathname) {
     setPrevPathname(pathname);
@@ -63,13 +61,10 @@ export function Header({
 
   return (
     <header className="sticky top-0 z-50 border-b border-border/70 bg-background/90 backdrop-blur-md">
-      <div className="mx-auto flex h-16 w-full max-w-[96rem] items-center gap-4 px-5 sm:px-6 lg:h-[4.25rem] lg:px-8">
+      <Container className="flex h-16 items-center justify-between gap-4 lg:h-[4.25rem]">
         <Logo className="shrink-0" href={`/${locale}`} />
 
-        <nav
-          className="hidden min-w-0 items-center gap-0.5 xl:flex"
-          aria-label="Principal"
-        >
+        <nav className="hidden max-w-[44rem] flex-1 items-center justify-center gap-0.5 xl:flex" aria-label="Principal">
           {nav.map((link) => {
             const target = localized(link.href);
             const active =
@@ -78,9 +73,7 @@ export function Header({
               <Link
                 key={link.href}
                 href={target}
-                className={`rounded-[var(--radius-sm)] font-medium whitespace-nowrap transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary ${
-                  compact ? "px-2 py-2 text-[0.8125rem]" : "px-2.5 py-2 text-sm"
-                } ${
+                className={`rounded-[var(--radius-sm)] px-2.5 py-2 text-center text-sm font-medium leading-tight transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary ${
                   active
                     ? "bg-primary-soft text-primary"
                     : "text-foreground/80 hover:bg-primary-soft/70 hover:text-primary"
@@ -92,14 +85,18 @@ export function Header({
           })}
         </nav>
 
-        <div className="ml-auto hidden shrink-0 items-center gap-3 xl:flex">
+        <div className="hidden shrink-0 items-center gap-3 xl:flex">
           <LanguageToggle current={locale} />
-          <Button href={localized("/contacto")} variant="primary" className="!py-2.5 !text-sm">
-            {headerCta}
+          <Button
+            href={localized("/contacto")}
+            variant="primary"
+            className="!max-w-[11.5rem] !whitespace-normal !py-2 !text-center !text-[0.8125rem] !leading-tight"
+          >
+            {ctaLabel}
           </Button>
         </div>
 
-        <div className="ml-auto flex items-center gap-2 xl:hidden">
+        <div className="flex items-center gap-2 xl:hidden">
           <LanguageToggle current={locale} />
           <button
             ref={toggleRef}
@@ -129,7 +126,7 @@ export function Header({
             </span>
           </button>
         </div>
-      </div>
+      </Container>
 
       {open ? (
         <div id={menuId} className="border-t border-border bg-surface xl:hidden">
