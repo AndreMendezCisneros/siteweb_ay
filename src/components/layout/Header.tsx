@@ -79,7 +79,7 @@ export function Header({
                 key={link.href}
                 href={target}
                 className={`rounded-[var(--radius-sm)] font-medium whitespace-nowrap transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary ${
-                  compact ? "px-1.5 py-2 text-xs" : "px-2 py-2 text-[0.8125rem]"
+                  compact ? "px-2 py-2 text-[0.8125rem]" : "px-2.5 py-2 text-sm"
                 } ${
                   active
                     ? "bg-primary-soft text-primary"
@@ -94,7 +94,7 @@ export function Header({
 
         <div className="ml-auto hidden shrink-0 items-center gap-3 xl:flex">
           <LanguageToggle current={locale} />
-          <Button href={localized("/contacto")} variant="primary" className="!py-2.5 !text-[0.8125rem]">
+          <Button href={localized("/contacto")} variant="primary" className="!py-2.5 !text-sm">
             {headerCta}
           </Button>
         </div>
