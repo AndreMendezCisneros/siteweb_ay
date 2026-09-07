@@ -210,6 +210,16 @@ export const es = {
       { src: "/images/app_incidencia.jpg", label: "Incidencias" },
       { src: "/images/app_perfil.jpg", label: "Perfil" },
     ],
+    videos: [
+      {
+        title: "Cómo usar la app",
+        youtubeId: "EhiZSqiEcg0",
+      },
+      {
+        title: "Cómo instalar la app",
+        youtubeId: "I9uBEF_a8xo",
+      },
+    ],
   },
   institutions: [
     {

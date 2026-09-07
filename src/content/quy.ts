@@ -213,6 +213,16 @@ export const quy: Dict = {
       { src: "/images/app_incidencia.jpg", label: "Incidencias" },
       { src: "/images/app_perfil.jpg", label: "Perfil" },
     ],
+    videos: [
+      {
+        title: "Imaynataq appta llamkachiy",
+        youtubeId: "EhiZSqiEcg0",
+      },
+      {
+        title: "Imaynataq appta instalay",
+        youtubeId: "I9uBEF_a8xo",
+      },
+    ],
   },
   institutions: [
     {

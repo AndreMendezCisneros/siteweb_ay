@@ -38,15 +38,16 @@ export function MessengerAppSection({
       <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {app.screens.map((screen, index) => (
           <Reveal key={screen.src} delay={index * 70}>
-            <figure className="mx-auto w-full max-w-[16rem]">
-              <div className="overflow-hidden rounded-[1.4rem] border border-border bg-ink p-2 shadow-md">
-                <div className="overflow-hidden rounded-[1.1rem] bg-surface">
+            <figure className="mx-auto w-full max-w-[12.5rem] sm:max-w-[13.5rem]">
+              <div className="overflow-hidden rounded-[1.65rem] border border-border bg-ink p-[0.45rem] shadow-md">
+                <div className="overflow-hidden rounded-[1.25rem] bg-surface">
                   <Image
                     src={screen.src}
                     alt={screen.label}
                     width={390}
                     height={844}
                     className="h-auto w-full object-cover object-top"
+                    sizes="(max-width: 640px) 200px, 216px"
                   />
                 </div>
               </div>
@@ -57,6 +58,34 @@ export function MessengerAppSection({
           </Reveal>
         ))}
       </div>
+
+      {app.videos?.length ? (
+        <div className="mt-10 grid gap-6 md:grid-cols-2">
+          {app.videos.map((video, index) => (
+            <Reveal key={video.youtubeId} delay={index * 80}>
+              <figure>
+                <div className="overflow-hidden rounded-[var(--radius-lg)] border border-border bg-ink shadow-md">
+                  <div className="relative aspect-video w-full">
+                    <iframe
+                      src={`https://www.youtube-nocookie.com/embed/${video.youtubeId}`}
+                      title={video.title}
+                      className="absolute inset-0 h-full w-full"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerPolicy="strict-origin-when-cross-origin"
+                      allowFullScreen
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+                <figcaption className="mt-3 text-sm font-semibold text-ink">
+                  {video.title}
+                </figcaption>
+              </figure>
+            </Reveal>
+          ))}
+        </div>
+      ) : null}
+
       {showDownload ? (
         <p className="mt-6 max-w-2xl text-xs leading-relaxed text-muted">{app.note}</p>
       ) : null}

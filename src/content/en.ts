@@ -212,6 +212,16 @@ export const en: Dict = {
       { src: "/images/app_incidencia.jpg", label: "Incidents" },
       { src: "/images/app_perfil.jpg", label: "Profile" },
     ],
+    videos: [
+      {
+        title: "How to use the app",
+        youtubeId: "EhiZSqiEcg0",
+      },
+      {
+        title: "How to install the app",
+        youtubeId: "I9uBEF_a8xo",
+      },
+    ],
   },
   institutions: [
     {
