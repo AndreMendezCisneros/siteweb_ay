@@ -25,38 +25,34 @@ export function PersonalizationBlock({
 }) {
   return (
     <div>
-      <p className="text-sm font-semibold uppercase tracking-[0.14em] text-primary-hover">{eyebrow}</p>
-      <h2 className="mt-3 max-w-2xl font-[family-name:var(--font-syne)] text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
+      <p className="kicker">{eyebrow}</p>
+      <h2 className="mt-3 max-w-2xl font-display text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
         {title}
       </h2>
       <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted">{description}</p>
 
-      <ul className="mt-8 grid gap-4 sm:grid-cols-2">
+      <ul className="mt-8 divide-y divide-border border-y border-border">
         {features.map((feature, index) => (
           <li key={feature}>
-            <Reveal
-              delay={index * 60}
-              className="h-full rounded-[var(--radius-lg)] border border-border bg-surface p-5"
-            >
+            <Reveal delay={index * 60} className="grid gap-3 py-5 sm:grid-cols-[4rem_1fr]">
+              <span className="font-mono text-sm text-accent-2">{String(index + 1).padStart(2, "0")}</span>
               <p className="text-sm leading-relaxed text-muted">{feature}</p>
             </Reveal>
           </li>
         ))}
       </ul>
 
-      <h3 className="mt-12 font-[family-name:var(--font-syne)] text-xl font-semibold text-ink">
-        {examplesTitle}
-      </h3>
-      <div className="mt-5 grid gap-4 md:grid-cols-3">
+      <h3 className="mt-12 font-display text-xl font-semibold text-ink">{examplesTitle}</h3>
+      <div className="mt-5 grid gap-0 border-2 border-ink md:grid-cols-3">
         {examples.map((ex, index) => (
           <Reveal
             key={ex.name}
             delay={index * 70}
-            className="overflow-hidden rounded-[var(--radius-lg)] border border-border bg-surface"
+            className="border-ink md:border-r md:last:border-r-0"
           >
             <div className="h-2 w-full" style={{ background: ex.accent }} aria-hidden />
             <div className="p-5">
-              <p className="font-[family-name:var(--font-syne)] font-semibold text-ink">{ex.name}</p>
+              <p className="font-display font-semibold text-ink">{ex.name}</p>
               <p className="mt-2 text-sm leading-relaxed text-muted">{ex.vibe}</p>
             </div>
           </Reveal>

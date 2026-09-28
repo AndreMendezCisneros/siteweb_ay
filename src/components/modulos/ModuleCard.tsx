@@ -9,6 +9,7 @@ export function ModuleCard({
   availableLabel,
   comingLabel,
   ctaLabel,
+  index,
 }: {
   href: string;
   name: string;
@@ -17,20 +18,28 @@ export function ModuleCard({
   availableLabel: string;
   comingLabel: string;
   ctaLabel: string;
+  index?: number;
 }) {
+  const number = index !== undefined ? String(index + 1).padStart(2, "0") : null;
+
   return (
     <Link
       href={href}
-      className="module-card group flex h-full flex-col rounded-[var(--radius-lg)] border border-border bg-surface p-6 shadow-sm transition duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+      className="module-row group flex flex-col gap-3 py-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink sm:flex-row sm:items-baseline sm:gap-8"
     >
-      <StatusBadge status={status} availableLabel={availableLabel} comingLabel={comingLabel} />
-      <h3 className="mt-3 font-[family-name:var(--font-syne)] text-xl font-semibold text-ink group-hover:text-primary">
-        {name}
-      </h3>
-      <p className="mt-2 flex-1 text-sm leading-relaxed text-muted">{summary}</p>
-      <span className="mt-5 text-sm font-semibold text-accent transition group-hover:translate-x-0.5">
-        {ctaLabel} →
-      </span>
+      {number ? (
+        <span className="font-mono text-sm font-medium text-accent-2">{number}</span>
+      ) : null}
+      <div className="min-w-0 flex-1">
+        <div className="flex flex-wrap items-center gap-3">
+          <h3 className="font-display text-xl font-semibold text-ink group-hover:underline group-hover:decoration-accent group-hover:decoration-2 group-hover:underline-offset-4">
+            {name}
+          </h3>
+          <StatusBadge status={status} availableLabel={availableLabel} comingLabel={comingLabel} />
+        </div>
+        <p className="mt-2 text-sm leading-relaxed text-muted">{summary}</p>
+      </div>
+      <span className="font-mono text-sm font-medium text-accent-2">{ctaLabel} →</span>
     </Link>
   );
 }

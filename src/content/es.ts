@@ -412,6 +412,10 @@ export const es = {
   },
   home: {
     heroEyebrow: "AsisAcademy · RYJEC",
+    heroLabel: "01 — Gestión de asistencia",
+    heroTitle: "Asistencia y seguimiento para instituciones que enseñan en serio.",
+    heroSubtitle:
+      "Escaneo QR en la puerta, indicadores para dirección el mismo día y comunicación directa con las familias. Diseñado para institutos, academias y colegios.",
     heroVideoTitle: "Video de AsisAcademy",
     problemEyebrow: "El problema y la propuesta",
     problemTitle: "De planillas dispersas a una sola fuente de verdad",
