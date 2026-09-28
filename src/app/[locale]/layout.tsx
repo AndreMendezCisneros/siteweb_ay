@@ -70,7 +70,20 @@ export async function generateMetadata({
       siteName: site.name,
       title: `${site.name} — ${site.tagline}`,
       description: site.description,
-      images: [{ url: "/images/logo_asisacademy.png", width: 512, height: 512, alt: site.name }],
+      images: [
+        {
+          url: "/images/og-asisacademy-1200.png",
+          width: 1200,
+          height: 630,
+          alt: `${site.name} — ${site.tagline}`,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${site.name} — ${site.tagline}`,
+      description: site.description,
+      images: ["/images/og-asisacademy-1200.png"],
     },
     alternates: {
       canonical: `/${locale}`,
