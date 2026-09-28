@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { HeroVideo } from "@/components/home/HeroVideo";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
@@ -6,20 +5,21 @@ import type { Dict } from "@/lib/i18n";
 
 export function Hero({ locale, dict }: { locale: string; dict: Dict }) {
   return (
-    <section className="hero-grid relative overflow-hidden border-b-2 border-ink">
-      <Container className="relative flex flex-col items-center py-14 text-center sm:py-16 lg:py-20">
+    <section className="relative border-b border-border bg-background">
+      <Container className="relative flex flex-col items-center py-16 text-center sm:py-20 lg:py-24">
         <p className="kicker animate-fade-up">{dict.home.heroLabel}</p>
-        <h1 className="animate-fade-up mt-4 max-w-4xl font-display text-4xl font-semibold leading-[1.12] tracking-tight text-ink sm:text-5xl lg:text-6xl">
+        <h1 className="animate-fade-up mt-4 max-w-3xl font-display text-3xl font-semibold leading-[1.18] tracking-tight text-ink sm:text-4xl lg:text-[2.75rem]">
           {dict.home.heroTitle}
         </h1>
+        <span className="rule mx-auto" aria-hidden />
         <p
-          className="animate-fade-up mt-5 max-w-2xl text-lg leading-relaxed text-muted sm:text-xl"
+          className="animate-fade-up mt-6 max-w-2xl text-base leading-relaxed text-muted sm:text-lg"
           style={{ animationDelay: "80ms" }}
         >
           {dict.home.heroSubtitle}
         </p>
         <div
-          className="animate-fade-up mt-10 flex w-full max-w-xl flex-col items-center justify-center gap-3 sm:flex-row"
+          className="animate-fade-up mt-8 flex w-full max-w-xl flex-col items-center justify-center gap-3 sm:flex-row"
           style={{ animationDelay: "140ms" }}
         >
           <Button href={`/${locale}/contacto`} variant="primary" className="min-w-[15rem]">
@@ -32,23 +32,9 @@ export function Hero({ locale, dict }: { locale: string; dict: Dict }) {
 
         <figure className="animate-fade-up mt-14 w-full" style={{ animationDelay: "200ms" }}>
           <div className="ink-frame">
-            <Image
-              src="/images/page_inicio.png"
-              alt={dict.productVisuals.heroAlt}
-              width={1280}
-              height={800}
-              priority
-              className="h-auto w-full object-cover object-top"
-            />
-          </div>
-          <figcaption className="mt-3 font-mono text-xs text-muted">{dict.ui.mockCaption}</figcaption>
-        </figure>
-
-        <figure className="animate-fade-up mt-8 w-full" style={{ animationDelay: "260ms" }}>
-          <div className="ink-frame">
             <HeroVideo title={dict.home.heroVideoTitle} />
           </div>
-          <figcaption className="mt-3 font-mono text-xs text-muted">{dict.home.heroVideoTitle}</figcaption>
+          <figcaption className="mt-3 text-xs text-muted">{dict.home.heroVideoTitle}</figcaption>
         </figure>
       </Container>
     </section>

@@ -50,13 +50,13 @@ export default async function ModulePage({ params }: Props) {
             <ul className="mt-8 space-y-3">
               {mod.benefits.map((b) => (
                 <li key={b} className="flex gap-3 text-base text-muted">
-                  <span className="mt-2 h-1.5 w-1.5 shrink-0 bg-accent" aria-hidden />
+                  <span className="mt-2 h-1.5 w-1.5 shrink-0 bg-accent-2" aria-hidden />
                   {b}
                 </li>
               ))}
             </ul>
             {isMessenger ? (
-              <div className="mt-10 border-2 border-ink bg-surface p-6">
+              <div className="panel mt-10 p-6">
                 <h3 className="font-display text-xl font-semibold text-ink">
                   {dict.messengerApp.title}
                 </h3>
@@ -72,7 +72,7 @@ export default async function ModulePage({ params }: Props) {
               </div>
             ) : null}
           </div>
-          <aside className="h-fit border-2 border-ink bg-surface p-6 lg:sticky lg:top-28">
+          <aside className="panel h-fit p-6 lg:sticky lg:top-28">
             <p className="text-sm text-muted">{dict.ui.byRyjec}</p>
             <p className="mt-3 text-sm text-muted">{dict.site.promise}</p>
             <div className="mt-6 space-y-3">

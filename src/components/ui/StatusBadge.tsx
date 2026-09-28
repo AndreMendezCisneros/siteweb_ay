@@ -11,7 +11,7 @@ export function StatusBadge({
 
   return (
     <span
-      className={`inline-flex items-center rounded-[2px] border px-2 py-0.5 font-mono text-xs font-medium ${
+      className={`inline-flex items-center rounded-[4px] border px-2 py-0.5 text-[0.7rem] font-semibold ${
         isAvailable
           ? "border-accent-2 bg-primary-soft text-accent-2"
           : "border-border bg-background text-muted"

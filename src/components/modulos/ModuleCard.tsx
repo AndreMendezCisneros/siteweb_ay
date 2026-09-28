@@ -28,7 +28,7 @@ export function ModuleCard({
       className="module-row group flex flex-col gap-3 py-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink sm:flex-row sm:items-baseline sm:gap-8"
     >
       {number ? (
-        <span className="font-mono text-sm font-medium text-accent-2">{number}</span>
+        <span className="kicker tabular-nums">{number}</span>
       ) : null}
       <div className="min-w-0 flex-1">
         <div className="flex flex-wrap items-center gap-3">
@@ -39,7 +39,7 @@ export function ModuleCard({
         </div>
         <p className="mt-2 text-sm leading-relaxed text-muted">{summary}</p>
       </div>
-      <span className="font-mono text-sm font-medium text-accent-2">{ctaLabel} →</span>
+      <span className="text-sm font-medium text-accent-2">{ctaLabel} →</span>
     </Link>
   );
 }

@@ -10,7 +10,7 @@ export function CtaBand({ locale, dict }: { locale: string; dict: Dict }) {
   return (
     <section className="py-10 sm:py-12 lg:py-14">
       <Container>
-        <div className="border-2 border-ink bg-surface px-6 py-12 shadow-[6px_6px_0_0_var(--ink)] sm:px-10 lg:px-14">
+        <div className="panel bg-primary-soft px-6 py-12 sm:px-10 lg:px-14">
           <div className="max-w-2xl">
             <p className="kicker">{dict.cta.pilot}</p>
             <h2 className="mt-3 font-display text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
@@ -23,7 +23,7 @@ export function CtaBand({ locale, dict }: { locale: string; dict: Dict }) {
               </Button>
               <a
                 href={wa}
-                className="inline-flex items-center justify-center gap-2 rounded-[2px] border-2 border-ink bg-background px-5 py-3 text-sm font-semibold text-ink transition hover:bg-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
+                className="inline-flex items-center justify-center gap-2 rounded-[4px] border border-border bg-surface px-5 py-2.5 text-sm font-semibold text-ink transition-colors hover:border-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
               >
                 WhatsApp · 949 261 503
               </a>

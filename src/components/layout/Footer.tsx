@@ -11,7 +11,7 @@ export function Footer({ locale, dict }: { locale: string; dict: Dict }) {
   }
 
   return (
-    <footer className="mt-auto border-t-4 border-ink bg-background text-ink">
+    <footer className="mt-auto border-t border-border bg-surface text-ink">
       <Container className="grid gap-10 py-12 sm:grid-cols-2 lg:grid-cols-4">
         <div>
           <Logo href={`/${locale}`} />

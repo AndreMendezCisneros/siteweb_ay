@@ -25,7 +25,7 @@ export default async function ContactoPage({ params }: Props) {
       <PageHero eyebrow={t.heroEyebrow} title={t.heroTitle} description={t.heroDescription} />
       <Section>
         <div className="grid gap-12 lg:grid-cols-[1.1fr_0.9fr]">
-          <div className="border-2 border-ink bg-surface p-6 sm:p-8">
+          <div className="panel p-6 sm:p-8">
             <h2 className="font-display text-2xl font-semibold text-ink">
               {t.formTitle}
             </h2>
@@ -35,7 +35,7 @@ export default async function ContactoPage({ params }: Props) {
             </div>
           </div>
           <aside className="space-y-8">
-            <div className="border-2 border-ink bg-surface p-6">
+            <div className="panel p-6">
               <h2 className="font-display text-xl font-semibold text-ink">
                 {t.afterTitle}
               </h2>

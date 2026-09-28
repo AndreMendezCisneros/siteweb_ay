@@ -72,13 +72,13 @@ export function ContactForm({
   }
 
   const fieldClass =
-    "mt-2 w-full rounded-[2px] border-2 bg-surface px-4 py-3 text-sm outline-none transition focus:ring-0";
-  const ok = "border-ink focus:border-accent-2";
+    "mt-2 w-full rounded-[4px] border bg-surface px-4 py-3 text-sm outline-none transition focus:ring-0";
+  const ok = "border-border focus:border-accent-2";
   const err = "border-error focus:border-error";
 
   if (status === "success") {
     return (
-      <div className="border-2 border-ink bg-surface p-6" role="status">
+      <div className="panel p-6" role="status">
         <h3 className="font-display text-xl font-semibold text-ink">
           {t.success.title}
         </h3>
@@ -87,7 +87,7 @@ export function ContactForm({
           {mailto ? (
             <a
               href={mailto}
-              className="inline-flex items-center justify-center rounded-[2px] border-2 border-ink bg-surface px-5 py-3 text-sm font-semibold text-accent-2"
+              className="inline-flex items-center justify-center rounded-[4px] border border-border bg-surface px-5 py-2.5 text-sm font-semibold text-accent-2"
             >
               {t.success.openEmail}
             </a>

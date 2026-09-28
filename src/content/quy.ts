@@ -370,7 +370,7 @@ export const quy: Dict = {
     },
   ],
   productVisuals: {
-    galleryEyebrow: "producto ukhunpi",
+    galleryEyebrow: "Producto",
     galleryTitle: "AsisAcademyqa ukhunpi kayhina rikurin",
     galleryDescription:
       "Cheqaq pantallakuna: inicio, asistencia, incidencias, padrón, catálogo, reportes, administración wan tayta-mama portal.",
@@ -399,7 +399,7 @@ export const quy: Dict = {
     ],
   },
   personalization: {
-    eyebrow: "personalización",
+    eyebrow: "Personalización",
     title: "Institucionniyki, sapallan visual identidadwan",
     description:
       "AsisAcademyqa manam huklla uyata forzanchu. Colores, logo, carnets wan pantallakunata instituciónman adaptanchik: plataformaqa ñawpaq p'unchawmantaraq qampa hina.",
@@ -431,12 +431,12 @@ export const quy: Dict = {
   },
   home: {
     heroEyebrow: "AsisAcademy · RYJEC",
-    heroLabel: "01 — Asistencia gestion",
+    heroLabel: "Asistencia plataforma",
     heroTitle: "Asistencia nisqawan qatiy, yachachiq institucioneskunapaq.",
     heroSubtitle:
       "Punkupi QR, direcciónpaq kunan punchaw indicadores, familiakunawan willakuy. Institutokunapaq, academiakunapaq, colegiokunapaq ruwasqa.",
     heroVideoTitle: "AsisAcademy video",
-    problemEyebrow: "02 — sasachakuywan propuesta",
+    problemEyebrow: "Sasachakuy",
     problemTitle: "Ch'eqerisqa planillakunamanta huklla cheqaq willakuyman",
     problemDescription:
       "Asistencia papelpi kachkaptin comunicación improvisado chatkunapi kachkaptin, direcciónqa tarde decidin. AsisAcademyqa tukuyta rolman hina yaykuywan hukllapi churan.",
@@ -452,31 +452,31 @@ export const quy: Dict = {
       "Autorizasqa portal wan sapallan aplicativo mensajería familiakunapaq.",
       "Huklla cheqaq willakuy, pagos notaswan wiñananpaq listo (hamuq).",
     ],
-    modulesEyebrow: "03 — módulokuna",
+    modulesEyebrow: "Módulokuna",
     modulesTitle: "Kunanña llamkachiyta atinki",
     modulesDescription:
       "Soqta módulo producciónpi. Hukkunaqa hamunraq hina rikurinku — manam listo hina venderanchikchu.",
-    methodEyebrow: "04 — imaynataq llamkan",
+    methodEyebrow: "Imaynataq llamkan",
     methodTitle: "Sapa etapatapi ima kan",
     methodDescription:
       "Soqta etapa. Unay tiempo relación: gratis pruebamanta institucionwan wiñaq plataformakama.",
-    audiencesEyebrow: "05 — uyariqkuna",
+    audiencesEyebrow: "Pipaqmi",
     audiencesTitle: "Pipaqmi AsisAcademy pensasqa",
     audiencesDescription:
       "Institutokuna, academiakuna, colegiokuna. Sapa perfilqa paypaq kaqllata qawan. Willakuyqa kaqllam; yaykuyqa manam.",
-    roadmapEyebrow: "06 — roadmap",
+    roadmapEyebrow: "Hamuq",
     roadmapTitle: "Qamwan wiñaq plataforma",
     roadmapDescription:
       "Kay módulokuna manaraq kachkankuchu. Manam kunan funcional hina venderankuchu.",
-    institutionsEyebrow: "01 — producciónpi instituciones",
+    institutionsEyebrow: "Producciónpi",
     institutionsTitle: "Producciónpi instituciones",
     institutionsDescription:
       "Asistencia incidenciakunata plataformawanña kamachiq colegios. Institutokuna academiakunaqa diseño segmentollam, mana kunan clientekuna.",
-    plansEyebrow: "07 — planekuna",
+    plansEyebrow: "Planekuna",
     plansTitle: "Alcanceta akllay, mana inventasqa preciota",
     plansDescription:
       "Tawa nivel configurables. Mana publicasqa tarifas: gratis pruebata tapukuy, propuestata armanaykipaq.",
-    faqEyebrow: "08 — faq",
+    faqEyebrow: "Tapukuykuna",
     faqTitle: "Sapa kuti tapukuykuna",
     valueTitle: "Yachachiq institucioneskunapaq allin tecnología",
     valuePoints: [
@@ -499,7 +499,7 @@ export const quy: Dict = {
       metaTitle: "Plataforma",
       metaDescription:
         "AsisAcademy: instituto, academia wan colegiokunapaq operativo base — asistencia, incidencias, carnets, portal wan mensajería.",
-      heroEyebrow: "plataforma",
+      heroEyebrow: "Plataforma",
       heroTitle: "Manam asistencia controlllamchu",
       heroDescription:
         "Institucionpa operativo basenmi: escaneo, incidencias historial, indicadores, credenciales, familiar portal wan sapallan aplicativo mensajería.",
@@ -507,7 +507,7 @@ export const quy: Dict = {
     modulos: {
       metaTitle: "Módulokuna",
       metaDescription: "AsisAcademy módulos catálogo: kachkanña wan hamunraq.",
-      heroEyebrow: "módulokuna",
+      heroEyebrow: "Módulokuna",
       heroTitle: "Módulos catálogo",
       heroDescription:
         "Kunan disponibles wan honesto roadmap. Mana listochu kachkaptinqa manam listo hina rikuchinchikchu.",
@@ -517,7 +517,7 @@ export const quy: Dict = {
     comoFunciona: {
       metaTitle: "Imaynataq llamkan",
       metaDescription: "AsisAcademy implementación: gratis pruebamanta institución wiñaykama.",
-      heroEyebrow: "imaynataq llamkan",
+      heroEyebrow: "Imaynataq llamkan",
       heroTitle: "Pilotomanta wiñaq plataformakama",
       heroDescription:
         "AsisAcademyta institución llamkayta mana sayachiychu churanapaq claro procesowan llamkanchik.",
@@ -525,7 +525,7 @@ export const quy: Dict = {
     instituciones: {
       metaTitle: "Yachay wasikuna",
       metaDescription: "AsisAcademyta producciónpiña llamkachiq yachay wasikuna.",
-      heroEyebrow: "instituciones",
+      heroEyebrow: "Instituciones",
       heroTitle: "AsisAcademywanña llamkaq instituciones",
       heroDescription:
         "Ayacucho-Huamanga colegios asistencia incidenciakunata plataformawanña kamachinku. Institutokuna academiakunaqa manam kunan clientekuna hina listachkankuchu.",
@@ -533,7 +533,7 @@ export const quy: Dict = {
     planes: {
       metaTitle: "Planekuna",
       metaDescription: "AsisAcademy planekuna configurables. Mana inventasqa precios.",
-      heroEyebrow: "planekuna",
+      heroEyebrow: "Planekuna",
       heroTitle: "Alcanceta akllay",
       heroDescription:
         "Tawa nivel. Gratis pruebata tapukuy, institucionniykiman hina propuestata armanchik.",
@@ -542,7 +542,7 @@ export const quy: Dict = {
     nosotros: {
       metaTitle: "Ñuqanchik",
       metaDescription: "AsisAcademyqa Ayacuchopi paqarisqa RYJEC marca.",
-      heroEyebrow: "ñuqanchik",
+      heroEyebrow: "Ñuqanchik",
       heroTitle: "Yachachiq institucioneskunapaq allin tecnología",
       heroDescription:
         "AsisAcademyqa Ayacuchopi paqarin planillakunata improvisado chatkunata reemplazanapaq: huklla cheqaq willakuy, rolman hina yaykuywan. Institutokunapaq, academiakunapaq, colegiokunapaq pensasqa.",
@@ -553,7 +553,7 @@ export const quy: Dict = {
     contacto: {
       metaTitle: "Rimanakuy",
       metaDescription: "AsisAcademy gratis pruebaykita mañakuy. WhatsApp 949 261 503.",
-      heroEyebrow: "rimanakuy",
+      heroEyebrow: "Rimanakuy",
       heroTitle: "Gratis pruebaykita mañakuy",
       heroDescription:
         "Institucionniykimanta willawayku. WhatsApp utaq correowan 30 p'unchaw pilotomanta claro kutichisayki.",

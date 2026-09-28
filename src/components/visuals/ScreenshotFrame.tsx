@@ -16,8 +16,8 @@ export function ScreenshotFrame({
   return (
     <figure className={className}>
       <div className="ink-frame">
-        <div className="flex items-center gap-2 border-b-2 border-ink bg-background px-3 py-2">
-          <span className="font-mono text-[0.65rem] text-muted">{alt}</span>
+        <div className="flex items-center gap-2 border-b border-border bg-background px-3 py-2">
+          <span className="text-[0.65rem] text-muted">{alt}</span>
         </div>
         <Image
           src={src}
@@ -28,7 +28,7 @@ export function ScreenshotFrame({
           className="h-auto w-full object-cover object-top"
         />
       </div>
-      {caption ? <figcaption className="mt-3 font-mono text-xs text-muted">{caption}</figcaption> : null}
+      {caption ? <figcaption className="mt-3 text-xs text-muted">{caption}</figcaption> : null}
     </figure>
   );
 }

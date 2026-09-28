@@ -45,7 +45,7 @@ export default async function HomePage({
               <Reveal delay={index * 80} className="flex h-full flex-col p-6">
                 <p className="kicker">{inst.status}</p>
                 <h3 className="mt-2 font-display text-xl font-semibold text-ink">{inst.name}</h3>
-                <p className="mt-1 font-mono text-sm text-muted">{inst.location}</p>
+                <p className="mt-1 text-sm text-muted">{inst.location}</p>
                 <p className="mt-3 flex-1 text-sm leading-relaxed text-muted">{inst.description}</p>
                 <a
                   href={inst.href}
@@ -67,8 +67,8 @@ export default async function HomePage({
           title={home.problemTitle}
           description={home.problemDescription}
         />
-        <div className="mt-8 grid gap-0 border-2 border-ink lg:grid-cols-2">
-          <Reveal className="border-b-2 border-ink bg-background p-6 lg:border-b-0 lg:border-r-2">
+        <div className="mt-8 grid gap-px border border-border bg-border lg:grid-cols-2">
+          <Reveal className="bg-background p-6">
             <h3 className="font-display text-xl font-semibold text-ink">{home.withoutTitle}</h3>
             <ul className="mt-4 space-y-3 text-sm leading-relaxed text-muted">
               {home.withoutItems.map((item) => (
@@ -175,7 +175,7 @@ export default async function HomePage({
           {dict.audiences.map((aud, index) => (
             <li key={aud.slug}>
               <Reveal delay={index * 60} className="grid gap-3 py-6 sm:grid-cols-[6rem_1fr]">
-                <p className="font-mono text-sm text-accent-2">{String(index + 1).padStart(2, "0")}</p>
+                <p className="kicker">{String(index + 1).padStart(2, "0")}</p>
                 <div>
                   <h3 className="font-display text-lg font-semibold text-ink">{aud.name}</h3>
                   <p className="mt-2 text-sm leading-relaxed text-muted">{aud.summary}</p>
@@ -221,14 +221,14 @@ export default async function HomePage({
             {dict.cta.seePlans} →
           </Link>
         </div>
-        <div className="mt-8 grid gap-0 border-2 border-ink sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-8 grid gap-px border border-border bg-border sm:grid-cols-2 lg:grid-cols-4">
           {dict.plans.map((plan, index) => (
             <Reveal
               key={plan.slug}
               delay={index * 60}
-              className="flex h-full flex-col border-ink p-6 sm:border-r sm:[&:nth-child(2n)]:border-r-0 lg:[&:nth-child(2n)]:border-r lg:[&:nth-child(4n)]:border-r-0"
+              className="flex h-full flex-col bg-surface p-6"
             >
-              <p className="font-mono text-sm text-accent-2">{String(index + 1).padStart(2, "0")}</p>
+              <p className="kicker">{String(index + 1).padStart(2, "0")}</p>
               <h3 className="mt-3 font-display text-lg font-semibold text-ink">{plan.name}</h3>
               <p className="mt-2 text-sm text-muted">{plan.summary}</p>
               <ul className="mt-4 flex-1 space-y-2 text-sm text-muted">

@@ -10,7 +10,7 @@ LOGO = ROOT / "public" / "images" / "logo_asisacademy_sf.png"
 FONT = Path(__file__).resolve().parent / "Fraunces.ttf"
 
 W, H = 1200, 630
-BG = (250, 246, 238)  # --bg #FAF6EE
+BG = (246, 244, 240)  # --bg #F6F4F0
 INK = (27, 27, 24)  # --ink #1B1B18
 FOREST = (20, 83, 45)  # --accent-2 #14532D
 AMBER = (232, 163, 23)  # --accent #E8A317
@@ -41,58 +41,39 @@ def main() -> None:
     img = Image.new("RGB", (W, H), BG)
     draw = ImageDraw.Draw(img)
 
-    # Notebook grid, very light, only as texture.
-    step = 28
-    grid = (*INK, 18)
-    overlay = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-    gdraw = ImageDraw.Draw(overlay)
-    for x in range(0, W, step):
-        gdraw.line([(x, 0), (x, H)], fill=grid, width=1)
-    for y in range(0, H, step):
-        gdraw.line([(0, y), (W, y)], fill=grid, width=1)
-    img = Image.alpha_composite(img.convert("RGBA"), overlay).convert("RGB")
-    draw = ImageDraw.Draw(img)
-
-    # Ink frame + hard offset shadow
-    frame = (48, 40, W - 56, H - 48)
-    shadow = (frame[0] + 8, frame[1] + 8, frame[2] + 8, frame[3] + 8)
-    draw.rectangle(shadow, fill=INK)
-    draw.rectangle(frame, fill=SURFACE, outline=INK, width=3)
+    frame = (56, 48, W - 56, H - 48)
+    draw.rectangle(frame, fill=SURFACE, outline=(27, 27, 24, 30), width=1)
+    draw.rectangle(frame, outline=(216, 213, 206), width=1)
 
     logo = Image.open(LOGO).convert("RGBA")
-    logo_h = 148
+    logo_h = 120
     ratio = logo_h / logo.height
     logo_w = round(logo.width * ratio)
     logo = logo.resize((logo_w, logo_h), Image.Resampling.LANCZOS)
 
     cx = (frame[0] + frame[2]) // 2
     logo_x = cx - logo_w // 2
-    logo_y = frame[1] + 36
+    logo_y = frame[1] + 48
     img.paste(logo, (logo_x, logo_y), logo)
     draw = ImageDraw.Draw(img)
 
-    brand_font = ImageFont.truetype(str(FONT), 28)
-    title_font = ImageFont.truetype(str(FONT), 42)
+    brand_font = ImageFont.truetype(str(FONT), 22)
+    title_font = ImageFont.truetype(str(FONT), 36)
 
     brand_w = draw.textlength(BRAND, font=brand_font)
-    brand_y = logo_y + logo_h + 18
+    brand_y = logo_y + logo_h + 22
     draw.text((cx - brand_w / 2, brand_y), BRAND, font=brand_font, fill=FOREST)
 
-    max_text = frame[2] - frame[0] - 80
+    max_text = frame[2] - frame[0] - 96
     lines = wrap(draw, TITLE, title_font, max_text)
-    line_h = 52
-    title_top = brand_y + 44
+    line_h = 46
+    title_top = brand_y + 40
     for i, line in enumerate(lines):
         lw = draw.textlength(line, font=title_font)
         draw.text((cx - lw / 2, title_top + i * line_h), line, font=title_font, fill=INK)
 
-    # Amber underline (fill, never amber-as-text)
-    last_w = draw.textlength(lines[-1], font=title_font)
-    underline_y = title_top + len(lines) * line_h + 4
-    draw.rectangle(
-        (cx - last_w / 2, underline_y, cx + last_w / 2, underline_y + 6),
-        fill=AMBER,
-    )
+    underline_y = title_top + len(lines) * line_h + 10
+    draw.rectangle((cx - 20, underline_y, cx + 20, underline_y + 2), fill=AMBER)
 
     img.save(OUT, "PNG", optimize=True)
     print(f"Wrote {OUT} {img.size}")

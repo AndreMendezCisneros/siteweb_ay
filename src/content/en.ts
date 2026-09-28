@@ -371,7 +371,7 @@ export const en: Dict = {
     },
   ],
   productVisuals: {
-    galleryEyebrow: "product inside",
+    galleryEyebrow: "Product",
     galleryTitle: "This is AsisAcademy inside",
     galleryDescription:
       "Real screens: home, attendance, incidents, student registry, catalogs, reports, admin and parent portal.",
@@ -400,7 +400,7 @@ export const en: Dict = {
     ],
   },
   personalization: {
-    eyebrow: "personalization",
+    eyebrow: "Personalization",
     title: "Your institution, with its own visual identity",
     description:
       "AsisAcademy does not force a single look. We adapt colors, logo, ID cards and screens to the institution: the platform feels yours from day one.",
@@ -432,12 +432,12 @@ export const en: Dict = {
   },
   home: {
     heroEyebrow: "AsisAcademy · RYJEC",
-    heroLabel: "01 — Attendance operations",
+    heroLabel: "Attendance platform",
     heroTitle: "Attendance and follow-up for institutions that take teaching seriously.",
     heroSubtitle:
       "QR scanning at the door, same-day indicators for leadership, and direct family communication. Designed for institutes, academies, and schools.",
     heroVideoTitle: "AsisAcademy video",
-    problemEyebrow: "02 — the problem and the proposal",
+    problemEyebrow: "The problem",
     problemTitle: "From scattered sheets to a single source of truth",
     problemDescription:
       "When attendance lives on paper and communication in improvised chats, leadership decides late. AsisAcademy centralizes everything with role-based access.",
@@ -453,30 +453,30 @@ export const en: Dict = {
       "Authorized portal and messaging in a dedicated app for families.",
       "A single source of truth, ready to grow with payments and grades (upcoming).",
     ],
-    modulesEyebrow: "03 — modules",
+    modulesEyebrow: "Modules",
     modulesTitle: "What you can use today",
     modulesDescription:
       "Six modules in production. Everything else is marked coming soon — we do not sell it as ready.",
-    methodEyebrow: "04 — how it works",
+    methodEyebrow: "How it works",
     methodTitle: "What each stage involves",
     methodDescription:
       "Six stages. A long-term relationship: from the free trial to a platform that can grow with the institution.",
-    audiencesEyebrow: "05 — audiences",
+    audiencesEyebrow: "Who it serves",
     audiencesTitle: "Who AsisAcademy is designed for",
     audiencesDescription:
       "Institutes, academies, and schools. Each profile sees what they need. The information is the same; access is not.",
-    roadmapEyebrow: "06 — roadmap",
+    roadmapEyebrow: "Roadmap",
     roadmapTitle: "A platform that grows with you",
     roadmapDescription: "These modules are not available yet. They are not sold as functional today.",
-    institutionsEyebrow: "01 — institutions in production",
+    institutionsEyebrow: "In production",
     institutionsTitle: "Institutions in production",
     institutionsDescription:
       "Schools that already run attendance and incidents on the platform. Institutes and academies are a design segment, not current clients.",
-    plansEyebrow: "07 — plans",
+    plansEyebrow: "Plans",
     plansTitle: "Choose the scope, not an invented price",
     plansDescription:
       "Four configurable levels. No published rates: request the free trial and we build the proposal.",
-    faqEyebrow: "08 — faq",
+    faqEyebrow: "FAQ",
     faqTitle: "Frequently asked questions",
     valueTitle: "Useful technology for institutions that take teaching seriously",
     valuePoints: [
@@ -499,7 +499,7 @@ export const en: Dict = {
       metaTitle: "Platform",
       metaDescription:
         "AsisAcademy: operational base for institutes, academies, and schools, with attendance, incidents, ID cards, portal and messaging.",
-      heroEyebrow: "platform",
+      heroEyebrow: "Platform",
       heroTitle: "Not just attendance control",
       heroDescription:
         "It is the institution's operational base: scanning, incident history, indicators, credentials, family portal and messaging in a dedicated app.",
@@ -517,7 +517,7 @@ export const en: Dict = {
     comoFunciona: {
       metaTitle: "How it works",
       metaDescription: "AsisAcademy rollout: from free trial to institutional evolution.",
-      heroEyebrow: "how it works",
+      heroEyebrow: "How it works",
       heroTitle: "From pilot to a platform that grows",
       heroDescription:
         "We work with a clear process to implement AsisAcademy without stopping operations.",
@@ -525,7 +525,7 @@ export const en: Dict = {
     instituciones: {
       metaTitle: "Institutions",
       metaDescription: "Institutions already using AsisAcademy in production.",
-      heroEyebrow: "institutions",
+      heroEyebrow: "Institutions",
       heroTitle: "Institutions already running AsisAcademy",
       heroDescription:
         "Schools in Ayacucho-Huamanga already managing attendance and incidents with the platform. Institutes and academies are not listed as current clients.",
@@ -533,7 +533,7 @@ export const en: Dict = {
     planes: {
       metaTitle: "Plans",
       metaDescription: "Configurable AsisAcademy plans. No invented prices.",
-      heroEyebrow: "plans",
+      heroEyebrow: "Plans",
       heroTitle: "Choose the scope",
       heroDescription:
         "Four levels. Request the free trial and we build the proposal for your institution.",
@@ -542,7 +542,7 @@ export const en: Dict = {
     nosotros: {
       metaTitle: "About us",
       metaDescription: "AsisAcademy is a RYJEC brand born in Ayacucho.",
-      heroEyebrow: "about us",
+      heroEyebrow: "About us",
       heroTitle: "Useful technology for institutions that take teaching seriously",
       heroDescription:
         "AsisAcademy was born in Ayacucho to replace spreadsheets and improvised chats: one source of truth, with role-based access. Designed for institutes, academies, and schools.",
@@ -553,7 +553,7 @@ export const en: Dict = {
     contacto: {
       metaTitle: "Contact",
       metaDescription: "Request your free AsisAcademy trial. WhatsApp 949 261 503.",
-      heroEyebrow: "contact",
+      heroEyebrow: "Contact",
       heroTitle: "Request your free trial",
       heroDescription:
         "Tell us about your institution. We reply by WhatsApp or email with clarity about the 30-day pilot.",

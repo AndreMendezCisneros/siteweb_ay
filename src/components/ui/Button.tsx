@@ -5,17 +5,17 @@ type Variant = "primary" | "secondary" | "ghost" | "onDark";
 
 const variants: Record<Variant, string> = {
   primary:
-    "bg-ink text-background shadow-[6px_6px_0_0_var(--accent)] hover:translate-x-[3px] hover:translate-y-[3px] hover:bg-accent hover:text-ink hover:shadow-[3px_3px_0_0_var(--ink)] focus-visible:outline-ink",
+    "bg-primary text-white hover:bg-primary-hover focus-visible:outline-primary",
   secondary:
-    "bg-background text-ink border-2 border-ink hover:bg-accent hover:text-ink focus-visible:outline-ink",
+    "bg-surface text-ink border border-border hover:border-ink hover:bg-background focus-visible:outline-ink",
   ghost:
-    "bg-transparent text-ink border-2 border-transparent hover:border-ink focus-visible:outline-ink",
+    "bg-transparent text-ink border border-transparent hover:border-border focus-visible:outline-ink",
   onDark:
-    "bg-background text-ink border-2 border-ink hover:bg-accent focus-visible:outline-ink",
+    "bg-surface text-ink border border-border hover:bg-background focus-visible:outline-white",
 };
 
 const base =
-  "inline-flex items-center justify-center gap-2 rounded-[2px] px-5 py-3 text-sm font-semibold transition duration-150 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 disabled:opacity-60";
+  "inline-flex items-center justify-center gap-2 rounded-[4px] px-5 py-2.5 text-sm font-semibold transition-colors duration-150 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 disabled:opacity-60";
 
 type ButtonProps = {
   children: ReactNode;

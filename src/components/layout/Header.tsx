@@ -60,12 +60,14 @@ export function Header({
   }
 
   return (
-    <header className="sticky top-0 z-50 border-b-2 border-ink bg-background">
+    <header className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur-sm">
       <Container className="flex h-16 items-center justify-between gap-4 lg:h-[4.25rem]">
         <Logo className="shrink-0" href={`/${locale}`} />
 
-        <nav className="hidden max-w-[44rem] flex-1 items-center justify-center gap-4 xl:flex" aria-label="Principal">
-          {nav.map((link) => {
+        <nav className="hidden max-w-none flex-1 items-center justify-center gap-x-3 xl:flex" aria-label="Principal">
+          {nav
+            .filter((link) => link.href !== "/contacto")
+            .map((link) => {
             const target = localized(link.href);
             const active =
               link.href === "/" ? pathname === `/${locale}` : pathname.startsWith(target);
@@ -75,7 +77,7 @@ export function Header({
                 href={target}
                 className={`px-1 py-2 text-center text-sm font-medium leading-tight transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink ${
                   active
-                    ? "text-ink underline decoration-accent decoration-2 underline-offset-8"
+                    ? "text-ink underline decoration-accent decoration-[2px] underline-offset-8"
                     : "text-ink/75 hover:text-ink"
                 }`}
               >
@@ -90,7 +92,7 @@ export function Header({
           <Button
             href={localized("/contacto")}
             variant="primary"
-            className="!max-w-[11.5rem] !whitespace-normal !py-2 !text-center !text-[0.8125rem] !leading-tight"
+            className="!max-w-none !whitespace-nowrap !px-4 !py-2 !text-center !text-[0.8125rem]"
           >
             {ctaLabel}
           </Button>
@@ -101,7 +103,7 @@ export function Header({
           <button
             ref={toggleRef}
             type="button"
-            className="inline-flex h-10 w-10 items-center justify-center rounded-[2px] border-2 border-ink text-ink"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-[4px] border border-border text-ink"
             aria-expanded={open}
             aria-controls={menuId}
             onClick={() => setOpen((v) => !v)}
@@ -129,14 +131,14 @@ export function Header({
       </Container>
 
       {open ? (
-        <div id={menuId} className="border-t-2 border-ink bg-surface xl:hidden">
+        <div id={menuId} className="border-t border-border bg-surface xl:hidden">
           <Container className="flex flex-col gap-1 py-4">
             {nav.map((link, index) => (
               <Link
                 key={link.href}
                 ref={index === 0 ? firstLinkRef : undefined}
                 href={localized(link.href)}
-                className="rounded-[2px] px-3 py-3 text-base font-medium text-ink hover:bg-accent/30"
+                className="rounded-[4px] px-3 py-3 text-base font-medium text-ink hover:bg-primary-soft"
               >
                 {link.label}
               </Link>

@@ -369,7 +369,7 @@ export const es = {
     },
   ],
   productVisuals: {
-    galleryEyebrow: "producto por dentro",
+    galleryEyebrow: "Producto",
     galleryTitle: "Así se ve AsisAcademy por dentro",
     galleryDescription:
       "Pantallas reales del sistema: inicio, asistencia, incidencias, padrón, catálogo, reportes, administración y portal familiar.",
@@ -398,7 +398,7 @@ export const es = {
     ],
   },
   personalization: {
-    eyebrow: "personalización",
+    eyebrow: "Personalización",
     title: "Tu institución, con su propia identidad visual",
     description:
       "AsisAcademy no impone una sola cara. Adaptamos colores, logo, carnets y pantallas a la institución: la plataforma se siente tuya desde el primer día.",
@@ -430,12 +430,12 @@ export const es = {
   },
   home: {
     heroEyebrow: "AsisAcademy · RYJEC",
-    heroLabel: "01 — Gestión de asistencia",
+    heroLabel: "Plataforma de asistencia",
     heroTitle: "Asistencia y seguimiento para instituciones que enseñan en serio.",
     heroSubtitle:
       "Escaneo QR en la puerta, indicadores para dirección el mismo día y comunicación directa con las familias. Diseñado para institutos, academias y colegios.",
     heroVideoTitle: "Video de AsisAcademy",
-    problemEyebrow: "02 — el problema y la propuesta",
+    problemEyebrow: "El problema",
     problemTitle: "De planillas dispersas a una sola fuente de verdad",
     problemDescription:
       "Cuando la asistencia vive en papel y la comunicación en chats improvisados, dirección decide tarde. AsisAcademy centraliza todo con accesos por rol.",
@@ -451,31 +451,31 @@ export const es = {
       "Portal autorizado y mensajería en aplicativo propio para las familias.",
       "Una sola fuente de verdad, lista para crecer con pagos y notas (próximos).",
     ],
-    modulesEyebrow: "03 — módulos",
+    modulesEyebrow: "Módulos",
     modulesTitle: "Lo que ya puedes usar hoy",
     modulesDescription:
       "Seis módulos en producción. Lo demás aparece como próximamente — no lo vendemos como listo.",
-    methodEyebrow: "04 — cómo funciona",
+    methodEyebrow: "Cómo funciona",
     methodTitle: "Qué implica cada etapa",
     methodDescription:
       "Seis etapas. Una relación de largo plazo: de la prueba gratuita a una plataforma que puede crecer con la institución.",
-    audiencesEyebrow: "05 — audiencias",
+    audiencesEyebrow: "A quién sirve",
     audiencesTitle: "Para quién está pensado AsisAcademy",
     audiencesDescription:
       "Institutos, academias y colegios. Cada perfil ve lo que le corresponde. La información es la misma; el acceso, no.",
-    roadmapEyebrow: "06 — roadmap",
+    roadmapEyebrow: "Hoja de ruta",
     roadmapTitle: "Una plataforma que crece contigo",
     roadmapDescription:
       "Estos módulos no están disponibles aún. No se venden como funcionales hoy.",
-    institutionsEyebrow: "01 — instituciones en producción",
+    institutionsEyebrow: "En producción",
     institutionsTitle: "Instituciones en producción",
     institutionsDescription:
       "Colegios que ya gestionan asistencia e incidencias con la plataforma. Institutos y academias se presentan como segmento de diseño, no como clientes actuales.",
-    plansEyebrow: "07 — planes",
+    plansEyebrow: "Planes",
     plansTitle: "Elige el alcance, no un precio inventado",
     plansDescription:
       "Cuatro niveles configurables. Sin tarifas publicadas: consulta la prueba gratuita y te armamos la propuesta.",
-    faqEyebrow: "08 — faq",
+    faqEyebrow: "Preguntas frecuentes",
     faqTitle: "Preguntas frecuentes",
     valueTitle: "Tecnología útil para instituciones que enseñan en serio",
     valuePoints: [
@@ -498,7 +498,7 @@ export const es = {
       metaTitle: "Plataforma",
       metaDescription:
         "AsisAcademy: base operativa para institutos, academias y colegios, con asistencia, incidencias, carnets, portal y mensajería.",
-      heroEyebrow: "plataforma",
+      heroEyebrow: "Plataforma",
       heroTitle: "No es solo un control de asistencia",
       heroDescription:
         "Es la base operativa de la institución: escaneo, historial de incidencias, indicadores, credenciales, portal familiar y mensajería en aplicativo propio.",
@@ -506,7 +506,7 @@ export const es = {
     modulos: {
       metaTitle: "Módulos",
       metaDescription: "Catálogo de módulos AsisAcademy: disponibles y próximamente.",
-      heroEyebrow: "módulos",
+      heroEyebrow: "Módulos",
       heroTitle: "Catálogo de módulos",
       heroDescription:
         "Disponibles hoy y roadmap honesto. Nada se presenta como listo si aún no lo está.",
@@ -516,7 +516,7 @@ export const es = {
     comoFunciona: {
       metaTitle: "Cómo funciona",
       metaDescription: "Implementación AsisAcademy: de la prueba gratuita a la evolución de la institución.",
-      heroEyebrow: "cómo funciona",
+      heroEyebrow: "Cómo funciona",
       heroTitle: "Del piloto a una plataforma que crece",
       heroDescription:
         "Trabajamos con un proceso claro para implementar AsisAcademy sin detener la operación de la institución.",
@@ -524,7 +524,7 @@ export const es = {
     instituciones: {
       metaTitle: "Instituciones",
       metaDescription: "Instituciones que ya usan AsisAcademy en producción.",
-      heroEyebrow: "instituciones",
+      heroEyebrow: "Instituciones",
       heroTitle: "Instituciones que ya operan con AsisAcademy",
       heroDescription:
         "Colegios en Ayacucho-Huamanga que ya gestionan asistencia e incidencias con la plataforma. Institutos y academias no se listan como clientes actuales.",
@@ -532,7 +532,7 @@ export const es = {
     planes: {
       metaTitle: "Planes",
       metaDescription: "Planes AsisAcademy configurables. Sin precios inventados.",
-      heroEyebrow: "planes",
+      heroEyebrow: "Planes",
       heroTitle: "Elige el alcance",
       heroDescription:
         "Cuatro niveles. Consulta la prueba gratuita y armamos la propuesta según tu institución.",
@@ -541,7 +541,7 @@ export const es = {
     nosotros: {
       metaTitle: "Nosotros",
       metaDescription: "AsisAcademy es una marca de RYJEC nacida en Ayacucho.",
-      heroEyebrow: "nosotros",
+      heroEyebrow: "Nosotros",
       heroTitle: "Tecnología útil para instituciones que enseñan en serio",
       heroDescription:
         "AsisAcademy nace en Ayacucho para reemplazar planillas y chats improvisados: una sola fuente de verdad, con accesos por rol. Pensado para institutos, academias y colegios.",
@@ -552,7 +552,7 @@ export const es = {
     contacto: {
       metaTitle: "Contacto",
       metaDescription: "Solicita tu prueba gratuita de AsisAcademy. WhatsApp 949 261 503.",
-      heroEyebrow: "contacto",
+      heroEyebrow: "Contacto",
       heroTitle: "Solicita tu prueba gratuita",
       heroDescription:
         "Cuéntanos sobre tu institución. Respondemos por WhatsApp o correo con claridad sobre el piloto de 30 días.",

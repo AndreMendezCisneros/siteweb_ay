@@ -1,30 +1,32 @@
 @import "tailwindcss";
 
 :root {
-  --bg: #faf6ee;
+  --bg: #f6f4f0;
   --surface: #ffffff;
   --ink: #1b1b18;
   --accent: #e8a317;
   --accent-2: #14532d;
   --muted: #5c5a52;
-  --line: color-mix(in srgb, var(--ink) 15%, transparent);
+  --line: color-mix(in srgb, var(--ink) 12%, transparent);
   --background: var(--bg);
   --foreground: var(--ink);
   --border: var(--line);
   --primary: var(--accent-2);
   --primary-hover: #0f3d22;
-  --primary-soft: color-mix(in srgb, var(--accent-2) 9%, var(--bg));
+  --primary-soft: color-mix(in srgb, var(--accent-2) 8%, var(--bg));
   --accent-hover: #c98b10;
+  --whatsapp: #128c7e;
+  --whatsapp-hover: #0e7368;
   --success: #14532d;
   --warning: #9a6b0a;
   --error: #b42318;
   --radius-sm: 2px;
   --radius-md: 4px;
   --radius-lg: 4px;
-  --shadow-hard: 6px 6px 0 var(--ink);
-  --shadow-sm: 6px 6px 0 var(--ink);
-  --shadow-md: 6px 6px 0 var(--ink);
-  --container: 72rem;
+  --shadow-soft: 0 8px 24px color-mix(in srgb, var(--ink) 8%, transparent);
+  --shadow-sm: var(--shadow-soft);
+  --shadow-md: 0 12px 32px color-mix(in srgb, var(--ink) 10%, transparent);
+  --container: 80rem;
 }
 
 @theme inline {
@@ -40,6 +42,8 @@
   --color-accent-hover: var(--accent-hover);
   --color-accent-2: var(--accent-2);
   --color-ink: var(--ink);
+  --color-whatsapp: var(--whatsapp);
+  --color-whatsapp-hover: var(--whatsapp-hover);
   --color-success: var(--success);
   --color-warning: var(--warning);
   --color-error: var(--error);
@@ -49,6 +53,8 @@
   --radius-sm: var(--radius-sm);
   --radius-md: var(--radius-md);
   --radius-lg: var(--radius-lg);
+  --shadow-sm: var(--shadow-soft);
+  --shadow-md: var(--shadow-md);
 }
 
 html {
@@ -62,39 +68,45 @@ body {
 }
 
 ::selection {
-  background: var(--accent);
+  background: var(--primary-soft);
   color: var(--ink);
 }
 
 .kicker {
-  font-family: var(--font-ibm-plex-mono), "IBM Plex Mono", ui-monospace, monospace;
-  font-size: 0.8125rem;
-  font-weight: 500;
-  letter-spacing: 0;
-  text-transform: lowercase;
+  font-family: var(--font-ibm-plex-sans), "IBM Plex Sans", system-ui, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: none;
   color: var(--accent-2);
 }
 
 .ink-frame {
   overflow: hidden;
-  border: 2px solid var(--ink);
-  border-radius: 2px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
   background: var(--surface);
-  box-shadow: var(--shadow-hard);
+  box-shadow: var(--shadow-soft);
 }
 
-.hero-grid {
-  background-color: var(--bg);
-  background-image:
-    linear-gradient(color-mix(in srgb, var(--ink) 8%, transparent) 1px, transparent 1px),
-    linear-gradient(90deg, color-mix(in srgb, var(--ink) 8%, transparent) 1px, transparent 1px);
-  background-size: 28px 28px;
+.panel {
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--surface);
+}
+
+.rule {
+  display: block;
+  width: 2.5rem;
+  height: 2px;
+  margin-top: 1.25rem;
+  background: var(--accent);
 }
 
 @keyframes fade-up {
   from {
     opacity: 0;
-    transform: translateY(1rem);
+    transform: translateY(0.6rem);
   }
   to {
     opacity: 1;
@@ -103,7 +115,7 @@ body {
 }
 
 .animate-fade-up {
-  animation: fade-up 0.7s ease-out both;
+  animation: fade-up 0.55s ease-out both;
 }
 
 .text-link {
@@ -127,15 +139,15 @@ body {
 
 .section-band {
   background: var(--surface);
-  border-block: 1.5px solid var(--line);
+  border-block: 1px solid var(--line);
 }
 
 .reveal {
   opacity: 0;
-  transform: translateY(1.25rem);
+  transform: translateY(0.75rem);
   transition:
-    opacity 0.65s ease-out,
-    transform 0.65s ease-out;
+    opacity 0.5s ease-out,
+    transform 0.5s ease-out;
 }
 
 .reveal.is-visible {
@@ -144,11 +156,11 @@ body {
 }
 
 .module-row {
-  border-bottom: 1.5px solid var(--line);
+  border-bottom: 1px solid var(--line);
 }
 
 .module-row:hover {
-  background: color-mix(in srgb, var(--accent) 12%, transparent);
+  background: var(--primary-soft);
 }
 
 @media (prefers-reduced-motion: reduce) {

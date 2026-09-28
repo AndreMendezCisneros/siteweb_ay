@@ -35,7 +35,7 @@ export function PersonalizationBlock({
         {features.map((feature, index) => (
           <li key={feature}>
             <Reveal delay={index * 60} className="grid gap-3 py-5 sm:grid-cols-[4rem_1fr]">
-              <span className="font-mono text-sm text-accent-2">{String(index + 1).padStart(2, "0")}</span>
+              <span className="kicker">{String(index + 1).padStart(2, "0")}</span>
               <p className="text-sm leading-relaxed text-muted">{feature}</p>
             </Reveal>
           </li>
@@ -43,12 +43,12 @@ export function PersonalizationBlock({
       </ul>
 
       <h3 className="mt-12 font-display text-xl font-semibold text-ink">{examplesTitle}</h3>
-      <div className="mt-5 grid gap-0 border-2 border-ink md:grid-cols-3">
+      <div className="mt-5 grid gap-px border border-border bg-border md:grid-cols-3">
         {examples.map((ex, index) => (
           <Reveal
             key={ex.name}
             delay={index * 70}
-            className="border-ink md:border-r md:last:border-r-0"
+            className="border-border bg-surface md:border-r-0"
           >
             <div className="h-2 w-full" style={{ background: ex.accent }} aria-hidden />
             <div className="p-5">

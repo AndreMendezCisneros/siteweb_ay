@@ -31,7 +31,7 @@ export function CarnetBlock({
         <ul className="mt-6 space-y-3">
           {points.map((point) => (
             <li key={point} className="flex gap-3 text-sm leading-relaxed text-muted">
-              <span className="mt-1.5 h-2 w-2 shrink-0 bg-accent" aria-hidden />
+              <span className="mt-1.5 h-1.5 w-1.5 shrink-0 bg-accent-2" aria-hidden />
               {point}
             </li>
           ))}

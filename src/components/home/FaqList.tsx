@@ -18,7 +18,7 @@ export function FaqList({ items }: { items: readonly { q: string; a: string }[] 
               onClick={() => setOpen(isOpen ? null : index)}
             >
               <span className="font-display font-semibold text-ink">{item.q}</span>
-              <span className="font-mono text-accent-2" aria-hidden>
+              <span className="text-accent-2" aria-hidden>
                 {isOpen ? "−" : "+"}
               </span>
             </button>

@@ -10,7 +10,7 @@ export function LanguageToggle({ current }: { current: string }) {
   const rest = pathname.replace(/^\/(es|en|quy)(?=\/|$)/, "") || "";
 
   return (
-    <div className="flex items-center gap-1.5 font-mono text-xs font-medium" aria-label="Idioma / Language">
+    <div className="flex items-center gap-1.5 text-xs font-medium" aria-label="Idioma / Language">
       {locales.map((locale, index) => (
         <span key={locale} className="flex items-center gap-1.5">
           {index > 0 ? (

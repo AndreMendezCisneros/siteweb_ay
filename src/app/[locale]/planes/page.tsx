@@ -28,7 +28,7 @@ export default async function PlanesPage({ params }: Props) {
             <Reveal
               key={plan.slug}
               delay={index * 60}
-              className="flex h-full flex-col border-2 border-ink bg-surface p-6"
+              className="panel flex h-full flex-col p-6"
             >
               <h2 className="font-display text-xl font-semibold text-ink">
                 {plan.name}
