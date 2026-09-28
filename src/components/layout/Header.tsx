@@ -60,11 +60,11 @@ export function Header({
   }
 
   return (
-    <header className="sticky top-0 z-50 border-b border-border/70 bg-background/90 backdrop-blur-md">
+    <header className="sticky top-0 z-50 border-b-2 border-ink bg-background">
       <Container className="flex h-16 items-center justify-between gap-4 lg:h-[4.25rem]">
         <Logo className="shrink-0" href={`/${locale}`} />
 
-        <nav className="hidden max-w-[44rem] flex-1 items-center justify-center gap-0.5 xl:flex" aria-label="Principal">
+        <nav className="hidden max-w-[44rem] flex-1 items-center justify-center gap-4 xl:flex" aria-label="Principal">
           {nav.map((link) => {
             const target = localized(link.href);
             const active =
@@ -73,10 +73,10 @@ export function Header({
               <Link
                 key={link.href}
                 href={target}
-                className={`rounded-[var(--radius-sm)] px-2.5 py-2 text-center text-sm font-medium leading-tight transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary ${
+                className={`px-1 py-2 text-center text-sm font-medium leading-tight transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink ${
                   active
-                    ? "bg-primary-soft text-primary"
-                    : "text-foreground/80 hover:bg-primary-soft/70 hover:text-primary"
+                    ? "text-ink underline decoration-accent decoration-2 underline-offset-8"
+                    : "text-ink/75 hover:text-ink"
                 }`}
               >
                 {link.label}
@@ -85,7 +85,7 @@ export function Header({
           })}
         </nav>
 
-        <div className="hidden shrink-0 items-center gap-3 xl:flex">
+        <div className="hidden shrink-0 items-center gap-4 xl:flex">
           <LanguageToggle current={locale} />
           <Button
             href={localized("/contacto")}
@@ -96,12 +96,12 @@ export function Header({
           </Button>
         </div>
 
-        <div className="flex items-center gap-2 xl:hidden">
+        <div className="flex items-center gap-3 xl:hidden">
           <LanguageToggle current={locale} />
           <button
             ref={toggleRef}
             type="button"
-            className="inline-flex h-10 w-10 items-center justify-center rounded-[var(--radius-sm)] border border-border text-ink"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-[2px] border-2 border-ink text-ink"
             aria-expanded={open}
             aria-controls={menuId}
             onClick={() => setOpen((v) => !v)}
@@ -129,14 +129,14 @@ export function Header({
       </Container>
 
       {open ? (
-        <div id={menuId} className="border-t border-border bg-surface xl:hidden">
+        <div id={menuId} className="border-t-2 border-ink bg-surface xl:hidden">
           <Container className="flex flex-col gap-1 py-4">
             {nav.map((link, index) => (
               <Link
                 key={link.href}
                 ref={index === 0 ? firstLinkRef : undefined}
                 href={localized(link.href)}
-                className="rounded-[var(--radius-sm)] px-3 py-3 text-base font-medium text-foreground hover:bg-primary-soft"
+                className="rounded-[2px] px-3 py-3 text-base font-medium text-ink hover:bg-accent/30"
               >
                 {link.label}
               </Link>
