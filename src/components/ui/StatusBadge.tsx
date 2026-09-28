@@ -11,10 +11,10 @@ export function StatusBadge({
 
   return (
     <span
-      className={`inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold ${
+      className={`inline-flex items-center rounded-[2px] border px-2 py-0.5 font-mono text-xs font-medium ${
         isAvailable
-          ? "bg-primary-soft text-primary"
-          : "bg-border/60 text-muted"
+          ? "border-accent-2 bg-primary-soft text-accent-2"
+          : "border-border bg-background text-muted"
       }`}
     >
       {isAvailable ? availableLabel : comingLabel}

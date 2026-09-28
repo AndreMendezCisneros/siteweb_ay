@@ -10,21 +10,26 @@ export function LanguageToggle({ current }: { current: string }) {
   const rest = pathname.replace(/^\/(es|en|quy)(?=\/|$)/, "") || "";
 
   return (
-    <div
-      className="flex items-center gap-0.5 rounded-full border border-border bg-surface p-0.5 text-xs font-semibold"
-      aria-label="Idioma / Language"
-    >
-      {locales.map((locale) => (
-        <Link
-          key={locale}
-          href={`/${locale}${rest}`}
-          aria-current={current === locale ? "true" : undefined}
-          className={`rounded-full px-2.5 py-1 uppercase tracking-wide transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-primary ${
-            current === locale ? "bg-primary text-white" : "text-muted hover:text-primary"
-          }`}
-        >
-          {locale}
-        </Link>
+    <div className="flex items-center gap-1.5 font-mono text-xs font-medium" aria-label="Idioma / Language">
+      {locales.map((locale, index) => (
+        <span key={locale} className="flex items-center gap-1.5">
+          {index > 0 ? (
+            <span className="text-muted" aria-hidden>
+              /
+            </span>
+          ) : null}
+          <Link
+            href={`/${locale}${rest}`}
+            aria-current={current === locale ? "true" : undefined}
+            className={`uppercase transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink ${
+              current === locale
+                ? "text-ink underline decoration-accent decoration-2 underline-offset-4"
+                : "text-muted hover:text-ink"
+            }`}
+          >
+            {locale}
+          </Link>
+        </span>
       ))}
     </div>
   );
