@@ -87,7 +87,7 @@ export const en: Dict = {
       status: "available",
       summary: "Role-based logging, institutional types and recurrence tracking.",
       description:
-        "Log and track incidents with school-defined types. Includes recurrence patterns for leadership.",
+        "Log and track incidents with institution-defined types. Includes recurrence patterns for leadership.",
       benefits: [
         "Configurable incident types",
         "Role-based follow-up",
@@ -137,9 +137,9 @@ export const en: Dict = {
       slug: "mensajeria",
       name: "Messaging",
       status: "available",
-      summary: "School ↔ family communication with a dedicated app.",
+      summary: "Institution ↔ family communication with a dedicated app.",
       description:
-        "Messaging in the AsisAcademy app so school and families communicate with clear history and roles.",
+        "Messaging in the AsisAcademy app so the institution and families communicate with clear history and roles.",
       benefits: [
         "Dedicated communication app",
         "Institutional history",
@@ -200,13 +200,13 @@ export const en: Dict = {
   messengerApp: {
     title: "App for families (Android)",
     description:
-      "Parents can download AsisAcademy Messenger and install it on their phone to receive and send school messages.",
+      "Parents can download AsisAcademy Messenger and install it on their phone to receive and send institutional messages.",
     button: "Download APK",
     note: "Android file (.apk). If the phone asks for permission to install apps from unknown sources, enable it only for this install.",
     href: "/app/asisacademy_Messenger.apk",
     galleryTitle: "This is how the app looks",
     galleryDescription:
-      "Messages, attendance, incidents and guardian profile — on the phone, with the same school information.",
+      "Messages, attendance, incidents and guardian profile — on the phone, with the same institution information.",
     screens: [
       { src: "/images/app_mensajes.jpg", label: "Messages" },
       { src: "/images/app_asistencia.jpg", label: "Attendance" },
@@ -375,7 +375,7 @@ export const en: Dict = {
     galleryTitle: "This is AsisAcademy inside",
     galleryDescription:
       "Real screens: home, attendance, incidents, student registry, catalogs, reports, admin and parent portal.",
-    galleryCaption: "Interface customizable per school",
+    galleryCaption: "Interface customizable per institution",
     heroAlt: "AsisAcademy home dashboard",
     screens: [
       { key: "inicio", label: "Home / dashboard" },
