@@ -36,8 +36,8 @@ export default async function PlataformaPage({ params }: Props) {
           <ul className="grid gap-5">
             {dict.home.valuePoints.map((point, i) => (
               <li key={point.title}>
-                <Reveal delay={i * 70} className="rounded-[var(--radius-lg)] border border-border bg-surface p-6">
-                  <h2 className="font-[family-name:var(--font-syne)] text-lg font-semibold text-ink">
+                <Reveal delay={i * 70} className="border border-border bg-surface p-6">
+                  <h2 className="font-display text-lg font-semibold text-ink">
                     {point.title}
                   </h2>
                   <p className="mt-2 text-sm text-muted">{point.text}</p>
@@ -77,8 +77,8 @@ export default async function PlataformaPage({ params }: Props) {
       </Section>
       <Section>
         <SectionHeading title={dict.pages.modulos.availableTitle} />
-        <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {available.map((mod) => (
+        <div className="mt-4 border-t border-border">
+          {available.map((mod, index) => (
             <ModuleCard
               key={mod.slug}
               href={`/${locale}/modulos/${mod.slug}`}
@@ -88,6 +88,7 @@ export default async function PlataformaPage({ params }: Props) {
               availableLabel={dict.ui.available}
               comingLabel={dict.ui.comingSoon}
               ctaLabel={dict.ui.seeModule}
+              index={index}
             />
           ))}
         </div>
@@ -102,7 +103,7 @@ export default async function PlataformaPage({ params }: Props) {
             <li key={mod.slug}>
               <Link
                 href={`/${locale}/modulos/${mod.slug}`}
-                className="block rounded-[var(--radius-md)] border border-dashed border-border p-4 text-sm text-muted hover:border-primary/40"
+                className="block border border-dashed border-border p-4 text-sm text-muted hover:border-ink"
               >
                 <span className="font-semibold text-ink">{mod.name}</span> — {mod.summary}
               </Link>
