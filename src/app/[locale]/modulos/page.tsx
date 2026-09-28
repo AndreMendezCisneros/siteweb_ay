@@ -24,8 +24,8 @@ export default async function ModulosPage({ params }: Props) {
       <PageHero eyebrow={t.heroEyebrow} title={t.heroTitle} description={t.heroDescription} />
       <Section>
         <SectionHeading title={t.availableTitle} />
-        <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {getAvailableModules(dict).map((mod) => (
+        <div className="mt-4 border-t border-border">
+          {getAvailableModules(dict).map((mod, index) => (
             <ModuleCard
               key={mod.slug}
               href={`/${locale}/modulos/${mod.slug}`}
@@ -35,14 +35,15 @@ export default async function ModulosPage({ params }: Props) {
               availableLabel={dict.ui.available}
               comingLabel={dict.ui.comingSoon}
               ctaLabel={dict.ui.seeModule}
+              index={index}
             />
           ))}
         </div>
       </Section>
       <Section band>
         <SectionHeading title={t.comingTitle} description={dict.home.roadmapDescription} />
-        <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {getComingModules(dict).map((mod) => (
+        <div className="mt-4 border-t border-border">
+          {getComingModules(dict).map((mod, index) => (
             <ModuleCard
               key={mod.slug}
               href={`/${locale}/modulos/${mod.slug}`}
@@ -52,6 +53,7 @@ export default async function ModulosPage({ params }: Props) {
               availableLabel={dict.ui.available}
               comingLabel={dict.ui.comingSoon}
               ctaLabel={dict.ui.seeModule}
+              index={index}
             />
           ))}
         </div>

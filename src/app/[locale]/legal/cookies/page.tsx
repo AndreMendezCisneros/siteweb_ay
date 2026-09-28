@@ -21,7 +21,7 @@ export default async function CookiesPage({ params }: Props) {
           <p>{t.intro}</p>
           {t.sections.map((s) => (
             <div key={s.heading}>
-              <h2 className="font-[family-name:var(--font-syne)] text-2xl font-semibold text-ink">
+              <h2 className="font-display text-2xl font-semibold text-ink">
                 {s.heading}
               </h2>
               <p className="mt-3">{s.body}</p>

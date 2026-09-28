@@ -50,14 +50,14 @@ export default async function ModulePage({ params }: Props) {
             <ul className="mt-8 space-y-3">
               {mod.benefits.map((b) => (
                 <li key={b} className="flex gap-3 text-base text-muted">
-                  <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" aria-hidden />
+                  <span className="mt-2 h-1.5 w-1.5 shrink-0 bg-accent" aria-hidden />
                   {b}
                 </li>
               ))}
             </ul>
             {isMessenger ? (
-              <div className="mt-10 rounded-[var(--radius-lg)] border border-primary/25 bg-primary-soft/50 p-6">
-                <h3 className="font-[family-name:var(--font-syne)] text-xl font-semibold text-ink">
+              <div className="mt-10 border-2 border-ink bg-surface p-6">
+                <h3 className="font-display text-xl font-semibold text-ink">
                   {dict.messengerApp.title}
                 </h3>
                 <p className="mt-3 text-sm leading-relaxed text-muted">
@@ -72,7 +72,7 @@ export default async function ModulePage({ params }: Props) {
               </div>
             ) : null}
           </div>
-          <aside className="h-fit rounded-[var(--radius-lg)] border border-border bg-surface p-6 lg:sticky lg:top-28">
+          <aside className="h-fit border-2 border-ink bg-surface p-6 lg:sticky lg:top-28">
             <p className="text-sm text-muted">{dict.ui.byRyjec}</p>
             <p className="mt-3 text-sm text-muted">{dict.site.promise}</p>
             <div className="mt-6 space-y-3">
@@ -104,9 +104,9 @@ export default async function ModulePage({ params }: Props) {
             <li key={item.slug}>
               <Link
                 href={`/${locale}/modulos/${item.slug}`}
-                className="block rounded-[var(--radius-md)] border border-border bg-surface p-5 hover:border-primary/40"
+                className="block border border-border bg-surface p-5 hover:border-ink"
               >
-                <p className="font-[family-name:var(--font-syne)] font-semibold text-ink">{item.name}</p>
+                <p className="font-display font-semibold text-ink">{item.name}</p>
                 <p className="mt-1 text-sm text-muted">{item.summary}</p>
               </Link>
             </li>
