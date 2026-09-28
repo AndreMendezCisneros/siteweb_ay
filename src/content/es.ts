@@ -85,7 +85,7 @@ export const es = {
       status: "available" as const,
       summary: "Registro por roles, tipos institucionales y seguimiento de reincidencia.",
       description:
-        "Registra y da seguimiento a incidencias con tipos definidos por la institución. Incluye vista de patrones de reincidencia para dirección.",
+        "Registra y da seguimiento a incidencias con tipos definidos por el colegio. Incluye vista de patrones de reincidencia para dirección.",
       benefits: [
         "Tipos de incidencia configurables",
         "Seguimiento por roles",
@@ -135,9 +135,9 @@ export const es = {
       slug: "mensajeria",
       name: "Mensajería",
       status: "available" as const,
-      summary: "Comunicación institución ↔ familias con aplicativo propio.",
+      summary: "Comunicación colegio ↔ familias con aplicativo propio.",
       description:
-        "Mensajería en el aplicativo AsisAcademy para que la institución y las familias se comuniquen con historial y roles claros.",
+        "Mensajería en el aplicativo AsisAcademy para que el colegio y las familias se comuniquen con historial y roles claros.",
       benefits: [
         "Aplicativo propio de comunicación",
         "Historial institucional",
@@ -404,7 +404,7 @@ export const es = {
       "AsisAcademy no impone una sola cara. Adaptamos colores, logo, carnets y pantallas a la institución: la plataforma se siente tuya desde el primer día.",
     features: [
       "Paleta institucional en botones, menú y acentos de la interfaz.",
-      "Logo institucional en carnets, encabezados y portal familiar.",
+      "Logo del colegio en carnets, encabezados y portal familiar.",
       "Horarios de llegada/salida y límites por nivel configurables.",
       "Catálogo de faltas y severidades definidos con dirección.",
     ],
@@ -645,7 +645,7 @@ export const es = {
     email: "Correo",
     school: "Institución",
     phone: "Teléfono (opcional)",
-    need: "Cuéntanos sobre tu institución",
+    need: "Cuéntanos sobre tu colegio",
     needPlaceholder: "Tamaño aproximado, puerta, qué quieres mejorar…",
     sending: "Enviando…",
     errors: {
