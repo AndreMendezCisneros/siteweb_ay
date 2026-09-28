@@ -2,12 +2,12 @@ export const es = {
   locale: "es",
   site: {
     name: "AsisAcademy",
-    tagline: "Asistencia y seguimiento para instituciones que enseñan en serio",
+    tagline: "Una plataforma para gestionar y conectar tu colegio",
     description:
-      "Escaneo QR en la puerta, indicadores para dirección el mismo día y comunicación directa con las familias. Diseñado para institutos, academias y colegios.",
+      "Centraliza asistencia, incidencias, carnets, reportes, portal familiar y mensajería — con accesos por rol y una sola fuente de verdad.",
     definition:
-      "AsisAcademy es una plataforma tecnológica de RYJEC para la gestión operativa de institutos, academias, CETPROs y colegios.",
-    promise: "Una sola fuente de verdad, con accesos por rol. Pensado para instituciones que enseñan en serio.",
+      "AsisAcademy es una plataforma tecnológica de RYJEC para la gestión y digitalización de instituciones educativas.",
+    promise: "Tecnología útil para el colegio: una sola fuente de verdad, con accesos por rol.",
     url: "https://asisacademy.com",
     ogLocale: "es_PE",
     parentBrand: "RYJEC",
@@ -27,12 +27,12 @@ export const es = {
     seeModules: "Ver módulos",
     seePlans: "Ver planes",
     howItWorks: "Cómo funciona",
-    bandTitle: "¿Llevamos AsisAcademy a tu institución?",
+    bandTitle: "¿Llevamos AsisAcademy a tu colegio?",
     bandDescription:
       "Te acompañamos en instalación, capacitación y carnets personalizados. Empieza con una prueba gratuita de 30 días.",
   },
   announcement: {
-    text: "Implementa AsisAcademy en tu institución · prueba gratuita 30 días",
+    text: "Implementa AsisAcademy en tu colegio · prueba gratuita 30 días",
     cta: "Solicitar prueba gratuita",
   },
   nav: [
@@ -109,9 +109,9 @@ export const es = {
       slug: "carnets",
       name: "Carnets",
       status: "available" as const,
-      summary: "Credenciales con la marca institucional, listas para escanear.",
+      summary: "Credenciales con la marca del colegio, listas para escanear.",
       description:
-        "Credenciales institucionales personalizadas con la marca de la institución, listas para el flujo de escaneo en puerta.",
+        "Credenciales institucionales personalizadas con la marca del colegio, listas para el flujo de escaneo en puerta.",
       benefits: [
         "Marca institucional en cada carnet",
         "Listos para QR o código de barras",
@@ -198,13 +198,13 @@ export const es = {
   messengerApp: {
     title: "App para familias (Android)",
     description:
-      "Los padres y madres pueden descargar AsisAcademy Messenger e instalarla en su celular para recibir y enviar mensajes de la institución.",
+      "Los padres y madres pueden descargar AsisAcademy Messenger e instalarla en su celular para recibir y enviar mensajes del colegio.",
     button: "Descargar APK",
     note: "Archivo Android (.apk). Si el teléfono pide permiso para instalar apps de origen desconocido, actívalo solo para esta instalación.",
     href: "/app/asisacademy_Messenger.apk",
     galleryTitle: "Así se ve la app",
     galleryDescription:
-      "Mensajes, asistencia, incidencias y perfil del apoderado — en el celular, con la misma información de la institución.",
+      "Mensajes, asistencia, incidencias y perfil del apoderado — en el celular, con la misma información del colegio.",
     screens: [
       { src: "/images/app_mensajes.jpg", label: "Mensajes" },
       { src: "/images/app_asistencia.jpg", label: "Asistencias" },
@@ -278,7 +278,7 @@ export const es = {
     {
       step: "01",
       title: "Entender",
-      description: "Conocemos la institución: puerta, horarios, roles y qué duele hoy.",
+      description: "Conocemos al colegio: puerta, horarios, roles y qué duele hoy.",
     },
     {
       step: "02",
@@ -288,7 +288,7 @@ export const es = {
     {
       step: "03",
       title: "Proponer",
-      description: "Armamos una prueba gratuita de 30 días con un grupo reducido, sin detener la operación.",
+      description: "Armamos una prueba gratuita de 30 días con un grupo reducido, sin detener el colegio.",
     },
     {
       step: "04",
@@ -304,32 +304,14 @@ export const es = {
       step: "06",
       title: "Evolucionar",
       description:
-        "Cuando la institución crece, la plataforma también: pagos y notas siguen como próximos.",
+        "Cuando el colegio crece, la plataforma también: pagos y notas siguen como próximos.",
     },
   ],
   audiences: [
     {
-      slug: "institutos",
-      name: "Institutos y CETPROs",
-      summary:
-        "Diseñado para institutos superiores y CETPROs que necesitan control de puerta, incidencias y comunicación con familias.",
-    },
-    {
-      slug: "academias",
-      name: "Academias y centros de idiomas",
-      summary:
-        "Ideal para academias preuniversitarias y centros de idiomas con turnos y seguimiento diario. No es un cliente actual: es el segmento para el que está pensado.",
-    },
-    {
-      slug: "colegios",
-      name: "Colegios",
-      summary:
-        "También sirve a colegios. Hoy opera en producción en I.E. San Ramón y Colegio Jean Piaget, en Ayacucho-Huamanga.",
-    },
-    {
       slug: "direccion",
       name: "Dirección / Admin",
-      summary: "Configura la institución, ve indicadores, reportes y alertas de reincidencia.",
+      summary: "Configura el colegio, ve indicadores, reportes y alertas de reincidencia.",
     },
     {
       slug: "docentes",
@@ -344,15 +326,15 @@ export const es = {
   ],
   faq: [
     {
-      q: "¿Para qué tipo de institución sirve?",
-      a: "Está pensado para institutos, academias preuniversitarias, centros de idiomas, CETPROs y colegios que necesitan control de puerta, incidencias y comunicación con familias. Hoy opera en producción en dos colegios de Ayacucho-Huamanga.",
+      q: "¿Para qué tipo de colegio sirve?",
+      a: "AsisAcademy está pensado para instituciones educativas que necesitan control de puerta, incidencias y comunicación con familias. Hoy opera en colegios de Ayacucho-Huamanga.",
     },
     {
       q: "¿Cómo funciona la prueba gratuita?",
       a: "30 días con un grupo reducido (grado/sección), instalación, capacitación y soporte. WhatsApp comercial: 949 261 503.",
     },
     {
-      q: "¿Qué necesita la institución para empezar?",
+      q: "¿Qué necesita el colegio para empezar?",
       a: "Personal de puerta, un responsable de dirección y datos básicos de estudiantes y horarios. Nosotros configuramos el sistema y los carnets.",
     },
     {
@@ -369,7 +351,7 @@ export const es = {
     },
   ],
   productVisuals: {
-    galleryEyebrow: "producto por dentro",
+    galleryEyebrow: "Producto",
     galleryTitle: "Así se ve AsisAcademy por dentro",
     galleryDescription:
       "Pantallas reales del sistema: inicio, asistencia, incidencias, padrón, catálogo, reportes, administración y portal familiar.",
@@ -386,9 +368,9 @@ export const es = {
       { key: "administrador", label: "Configuración" },
       { key: "portal", label: "Portal de padres" },
     ],
-    carnetTitle: "Carnets con la marca de tu institución",
+    carnetTitle: "Carnets con la marca de tu colegio",
     carnetDescription:
-      "Diseñamos credenciales listas para escanear, con tipografía, colores y detalles alineados a la identidad institucional. Cada institución luce distinta sin perder el flujo de puerta.",
+      "Diseñamos credenciales listas para escanear, con tipografía, colores y detalles alineados a la identidad institucional. Cada colegio luce distinto sin perder el flujo de puerta.",
     carnetAlt: "Ejemplo de carnet AsisAcademy",
     carnetPoints: [
       "Logo y colores institucionales en el carnet",
@@ -398,8 +380,8 @@ export const es = {
     ],
   },
   personalization: {
-    eyebrow: "personalización",
-    title: "Tu institución, con su propia identidad visual",
+    eyebrow: "Personalización",
+    title: "Tu colegio, con su propia identidad visual",
     description:
       "AsisAcademy no impone una sola cara. Adaptamos colores, logo, carnets y pantallas a la institución: la plataforma se siente tuya desde el primer día.",
     features: [
@@ -411,19 +393,19 @@ export const es = {
     examplesTitle: "Ejemplos de look institucional",
     examples: [
       {
-        name: "Instituto Andino",
-        vibe: "Verde bosque en menú y botones; carnet con tipografía serif y marca propia.",
-        accent: "#14532D",
+        name: "Colegio Verde Andes",
+        vibe: "Verdes institucionales en menú y botones; carnet con escudo propio y tipografía serena.",
+        accent: "#15803d",
       },
       {
-        name: "Academia Norte",
-        vibe: "Ámbar en acentos y tinta en bordes; portal de familias con el mismo criterio.",
-        accent: "#E8A317",
+        name: "Instituto Horizonte",
+        vibe: "Azul marino en sidebar y celeste en progreso; portal padres con la misma identidad.",
+        accent: "#1d4ed8",
       },
       {
-        name: "CETPRO Taller",
-        vibe: "Crema y tinta, con el logo institucional en carnets y encabezados.",
-        accent: "#1B1B18",
+        name: "Liceo Aurora",
+        vibe: "Morado AsisAcademy + celeste tecnológico; carnets con gradiente de marca y foto circular.",
+        accent: "#5b21e6",
       },
     ],
     note: "Los nombres anteriores son ejemplos ilustrativos de personalización visual. No representan clientes adicionales a las instituciones en producción listadas en el sitio.",
@@ -435,7 +417,7 @@ export const es = {
     heroSubtitle:
       "Escaneo QR en la puerta, indicadores para dirección el mismo día y comunicación directa con las familias. Diseñado para institutos, academias y colegios.",
     heroVideoTitle: "Video de AsisAcademy",
-    problemEyebrow: "02 — el problema y la propuesta",
+    problemEyebrow: "El problema y la propuesta",
     problemTitle: "De planillas dispersas a una sola fuente de verdad",
     problemDescription:
       "Cuando la asistencia vive en papel y la comunicación en chats improvisados, dirección decide tarde. AsisAcademy centraliza todo con accesos por rol.",
@@ -451,33 +433,32 @@ export const es = {
       "Portal autorizado y mensajería en aplicativo propio para las familias.",
       "Una sola fuente de verdad, lista para crecer con pagos y notas (próximos).",
     ],
-    modulesEyebrow: "03 — módulos",
+    modulesEyebrow: "Módulos",
     modulesTitle: "Lo que ya puedes usar hoy",
     modulesDescription:
       "Seis módulos en producción. Lo demás aparece como próximamente — no lo vendemos como listo.",
-    methodEyebrow: "04 — cómo funciona",
+    methodEyebrow: "Cómo funciona",
     methodTitle: "Qué implica cada etapa",
     methodDescription:
-      "Seis etapas. Una relación de largo plazo: de la prueba gratuita a una plataforma que puede crecer con la institución.",
-    audiencesEyebrow: "05 — audiencias",
-    audiencesTitle: "Para quién está pensado AsisAcademy",
-    audiencesDescription:
-      "Institutos, academias y colegios. Cada perfil ve lo que le corresponde. La información es la misma; el acceso, no.",
-    roadmapEyebrow: "06 — roadmap",
+      "Seis etapas. Una relación de largo plazo: de la prueba gratuita a una plataforma que puede crecer con el colegio.",
+    audiencesEyebrow: "Audiencias",
+    audiencesTitle: "Para quién es AsisAcademy",
+    audiencesDescription: "Cada perfil ve lo que le corresponde. La información es la misma; el acceso, no.",
+    roadmapEyebrow: "Roadmap",
     roadmapTitle: "Una plataforma que crece contigo",
     roadmapDescription:
       "Estos módulos no están disponibles aún. No se venden como funcionales hoy.",
-    institutionsEyebrow: "01 — instituciones en producción",
+    institutionsEyebrow: "Ya usan AsisAcademy",
     institutionsTitle: "Instituciones en producción",
     institutionsDescription:
-      "Colegios que ya gestionan asistencia e incidencias con la plataforma. Institutos y academias se presentan como segmento de diseño, no como clientes actuales.",
-    plansEyebrow: "07 — planes",
+      "Colegios que ya gestionan asistencia e incidencias con la plataforma.",
+    plansEyebrow: "Planes",
     plansTitle: "Elige el alcance, no un precio inventado",
     plansDescription:
       "Cuatro niveles configurables. Sin tarifas publicadas: consulta la prueba gratuita y te armamos la propuesta.",
-    faqEyebrow: "08 — faq",
+    faqEyebrow: "FAQ",
     faqTitle: "Preguntas frecuentes",
-    valueTitle: "Tecnología útil para instituciones que enseñan en serio",
+    valueTitle: "Tecnología útil para el colegio, hecha por RYJEC",
     valuePoints: [
       {
         title: "Una fuente de verdad",
@@ -488,7 +469,7 @@ export const es = {
         text: "Cada perfil ve lo que le corresponde. La información es la misma; el permiso, no.",
       },
       {
-        title: "Crece con la institución",
+        title: "Crece con el colegio",
         text: "Hoy seis módulos en producción. Pagos y notas están marcados como próximos, no como vendidos.",
       },
     ],
@@ -497,16 +478,16 @@ export const es = {
     plataforma: {
       metaTitle: "Plataforma",
       metaDescription:
-        "AsisAcademy: base operativa para institutos, academias y colegios, con asistencia, incidencias, carnets, portal y mensajería.",
-      heroEyebrow: "plataforma",
+        "AsisAcademy: base operativa del colegio con asistencia, incidencias, carnets, portal y mensajería.",
+      heroEyebrow: "Plataforma",
       heroTitle: "No es solo un control de asistencia",
       heroDescription:
-        "Es la base operativa de la institución: escaneo, historial de incidencias, indicadores, credenciales, portal familiar y mensajería en aplicativo propio.",
+        "Es la base operativa del colegio: escaneo, historial de incidencias, indicadores, credenciales, portal familiar y mensajería en aplicativo propio.",
     },
     modulos: {
       metaTitle: "Módulos",
       metaDescription: "Catálogo de módulos AsisAcademy: disponibles y próximamente.",
-      heroEyebrow: "módulos",
+      heroEyebrow: "Módulos",
       heroTitle: "Catálogo de módulos",
       heroDescription:
         "Disponibles hoy y roadmap honesto. Nada se presenta como listo si aún no lo está.",
@@ -515,36 +496,36 @@ export const es = {
     },
     comoFunciona: {
       metaTitle: "Cómo funciona",
-      metaDescription: "Implementación AsisAcademy: de la prueba gratuita a la evolución de la institución.",
-      heroEyebrow: "cómo funciona",
+      metaDescription: "Implementación AsisAcademy: de la prueba gratuita a la evolución del colegio.",
+      heroEyebrow: "Cómo funciona",
       heroTitle: "Del piloto a una plataforma que crece",
       heroDescription:
-        "Trabajamos con un proceso claro para implementar AsisAcademy sin detener la operación de la institución.",
+        "Trabajamos con un proceso claro para implementar AsisAcademy sin detener la operación del colegio.",
     },
     instituciones: {
       metaTitle: "Instituciones",
       metaDescription: "Instituciones que ya usan AsisAcademy en producción.",
-      heroEyebrow: "instituciones",
-      heroTitle: "Instituciones que ya operan con AsisAcademy",
+      heroEyebrow: "Instituciones",
+      heroTitle: "Instituciones que confían en AsisAcademy",
       heroDescription:
-        "Colegios en Ayacucho-Huamanga que ya gestionan asistencia e incidencias con la plataforma. Institutos y academias no se listan como clientes actuales.",
+        "Colegios en Ayacucho-Huamanga que ya gestionan asistencia e incidencias con la plataforma.",
     },
     planes: {
       metaTitle: "Planes",
       metaDescription: "Planes AsisAcademy configurables. Sin precios inventados.",
-      heroEyebrow: "planes",
+      heroEyebrow: "Planes",
       heroTitle: "Elige el alcance",
       heroDescription:
-        "Cuatro niveles. Consulta la prueba gratuita y armamos la propuesta según tu institución.",
+        "Cuatro niveles. Consulta la prueba gratuita y armamos la propuesta según tu colegio.",
       note: "No publicamos tarifas. Cada propuesta se define con tu contexto real.",
     },
     nosotros: {
       metaTitle: "Nosotros",
       metaDescription: "AsisAcademy es una marca de RYJEC nacida en Ayacucho.",
-      heroEyebrow: "nosotros",
-      heroTitle: "Tecnología útil para instituciones que enseñan en serio",
+      heroEyebrow: "Nosotros",
+      heroTitle: "Tecnología útil para el colegio, hecha por RYJEC",
       heroDescription:
-        "AsisAcademy nace en Ayacucho para reemplazar planillas y chats improvisados: una sola fuente de verdad, con accesos por rol. Pensado para institutos, academias y colegios.",
+        "AsisAcademy nace en Ayacucho para reemplazar planillas y chats improvisados: una sola fuente de verdad, con accesos por rol.",
       teamTitle: "Equipo RYJEC",
       teamDescription: "El equipo de RYJEC que construye AsisAcademy.",
       teamCaption: "Equipo RYJEC",
@@ -552,17 +533,17 @@ export const es = {
     contacto: {
       metaTitle: "Contacto",
       metaDescription: "Solicita tu prueba gratuita de AsisAcademy. WhatsApp 949 261 503.",
-      heroEyebrow: "contacto",
+      heroEyebrow: "Contacto",
       heroTitle: "Solicita tu prueba gratuita",
       heroDescription:
-        "Cuéntanos sobre tu institución. Respondemos por WhatsApp o correo con claridad sobre el piloto de 30 días.",
+        "Cuéntanos sobre tu colegio. Respondemos por WhatsApp o correo con claridad sobre el piloto de 30 días.",
       formTitle: "Formulario de solicitud",
       formDescription: "Completa los datos o escríbenos por WhatsApp.",
       whatsappLabel: "WhatsApp comercial",
       phonesTitle: "Teléfonos",
       afterTitle: "Qué pasa después",
       afterSteps: [
-        { title: "Entendemos.", text: "Leemos el contexto de tu institución." },
+        { title: "Entendemos.", text: "Leemos el contexto de tu colegio." },
         { title: "Respondemos.", text: "Te escribimos con siguientes pasos del piloto." },
         { title: "Proponemos.", text: "Si hay encaje, armamos la prueba gratuita de 30 días." },
       ],
@@ -643,7 +624,7 @@ export const es = {
   form: {
     name: "Nombre",
     email: "Correo",
-    school: "Institución",
+    school: "Colegio",
     phone: "Teléfono (opcional)",
     need: "Cuéntanos sobre tu colegio",
     needPlaceholder: "Tamaño aproximado, puerta, qué quieres mejorar…",
@@ -652,7 +633,7 @@ export const es = {
       name: "Ingresa tu nombre.",
       email: "Ingresa tu correo.",
       emailInvalid: "Ingresa un correo válido.",
-      school: "Ingresa el nombre de la institución.",
+      school: "Ingresa el nombre del colegio.",
       need: "Cuéntanos un poco más.",
       generic: "Hubo un problema. Escríbenos por WhatsApp al 949 261 503.",
     },
@@ -664,7 +645,7 @@ export const es = {
     },
   },
   footer: {
-    tagline: "Asistencia y seguimiento para instituciones que enseñan en serio. Una marca de RYJEC.",
+    tagline: "Plataforma de gestión escolar. Una marca de RYJEC.",
     product: "Producto",
     company: "Empresa",
     legal: "Legal",
