@@ -29,9 +29,9 @@ export default async function NosotrosPage({ params }: Props) {
             {dict.home.valuePoints.map((point) => (
               <li
                 key={point.title}
-                className="border border-border bg-surface p-6"
+                className="rounded-[var(--radius-lg)] border border-border bg-surface p-6"
               >
-                <h2 className="font-display text-lg font-semibold text-ink">
+                <h2 className="font-[family-name:var(--font-syne)] text-lg font-semibold text-ink">
                   {point.title}
                 </h2>
                 <p className="mt-2 text-sm text-muted">{point.text}</p>
@@ -43,7 +43,7 @@ export default async function NosotrosPage({ params }: Props) {
       <Section band>
         <SectionHeading title={t.teamTitle} description={t.teamDescription} />
         <figure className="mx-auto mt-8 max-w-4xl">
-          <div className="ink-frame">
+          <div className="overflow-hidden rounded-[var(--radius-lg)] border border-border bg-surface shadow-md">
             <Image
               src="/images/equipo.jpg"
               alt={t.teamCaption}

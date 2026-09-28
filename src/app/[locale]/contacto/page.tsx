@@ -25,8 +25,8 @@ export default async function ContactoPage({ params }: Props) {
       <PageHero eyebrow={t.heroEyebrow} title={t.heroTitle} description={t.heroDescription} />
       <Section>
         <div className="grid gap-12 lg:grid-cols-[1.1fr_0.9fr]">
-          <div className="border-2 border-ink bg-surface p-6 sm:p-8">
-            <h2 className="font-display text-2xl font-semibold text-ink">
+          <div className="rounded-[var(--radius-lg)] border border-border bg-surface p-6 sm:p-8">
+            <h2 className="font-[family-name:var(--font-syne)] text-2xl font-semibold text-ink">
               {t.formTitle}
             </h2>
             <p className="mt-2 text-sm text-muted">{t.formDescription}</p>
@@ -35,8 +35,8 @@ export default async function ContactoPage({ params }: Props) {
             </div>
           </div>
           <aside className="space-y-8">
-            <div className="border-2 border-ink bg-surface p-6">
-              <h2 className="font-display text-xl font-semibold text-ink">
+            <div className="rounded-[var(--radius-lg)] border border-border bg-surface p-6">
+              <h2 className="font-[family-name:var(--font-syne)] text-xl font-semibold text-ink">
                 {t.afterTitle}
               </h2>
               <ol className="mt-4 space-y-4 text-sm text-muted">
@@ -48,7 +48,7 @@ export default async function ContactoPage({ params }: Props) {
               </ol>
             </div>
             <div>
-              <h2 className="font-display text-xl font-semibold text-ink">
+              <h2 className="font-[family-name:var(--font-syne)] text-xl font-semibold text-ink">
                 {t.whatsappLabel}
               </h2>
               <a
@@ -62,7 +62,7 @@ export default async function ContactoPage({ params }: Props) {
               <p className="mt-2 text-sm text-muted">{dict.cta.pilot}</p>
             </div>
             <div>
-              <h2 className="font-display text-xl font-semibold text-ink">
+              <h2 className="font-[family-name:var(--font-syne)] text-xl font-semibold text-ink">
                 {t.phonesTitle}
               </h2>
               <ul className="mt-3 space-y-2">

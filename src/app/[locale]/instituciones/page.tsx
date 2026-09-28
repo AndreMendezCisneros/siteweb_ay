@@ -25,11 +25,11 @@ export default async function InstitucionesPage({ params }: Props) {
         <ul className="grid gap-5 md:grid-cols-2">
           {dict.institutions.map((inst, index) => (
             <li key={inst.slug}>
-            <Reveal delay={index * 80} className="flex h-full flex-col border border-border bg-surface p-8">
-                <p className="kicker">
+              <Reveal delay={index * 80} className="flex h-full flex-col rounded-[var(--radius-lg)] border border-border bg-surface p-8">
+                <p className="text-xs font-semibold uppercase tracking-[0.12em] text-primary-hover">
                   {inst.status}
                 </p>
-                <h2 className="mt-3 font-display text-2xl font-semibold text-ink">
+                <h2 className="mt-3 font-[family-name:var(--font-syne)] text-2xl font-semibold text-ink">
                   {inst.name}
                 </h2>
                 <p className="mt-1 text-sm text-muted">{inst.location}</p>
