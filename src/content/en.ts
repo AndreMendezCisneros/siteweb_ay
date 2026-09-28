@@ -17,6 +17,7 @@ export const en: Dict = {
       contact: "contacto@ryjec.com",
     },
     phone: "+51 949 261 503",
+    phones: ["+51 926 764 186", "+51 947 854 586", "+51 900 116 737"],
     whatsappDigits: "51949261503",
   },
   cta: {
@@ -212,6 +213,10 @@ export const en: Dict = {
       { src: "/images/app_incidencia.jpg", label: "Incidents" },
       { src: "/images/app_perfil.jpg", label: "Profile" },
     ],
+    promo: {
+      title: "Promo video",
+      youtubeId: "1TIvseXgww4",
+    },
     videos: [
       {
         title: "How to use the app",
@@ -409,6 +414,7 @@ export const en: Dict = {
   },
   home: {
     heroEyebrow: "AsisAcademy · RYJEC",
+    heroVideoTitle: "AsisAcademy video",
     problemEyebrow: "The problem and the proposal",
     problemTitle: "From scattered sheets to a single source of truth",
     problemDescription:
@@ -518,8 +524,8 @@ export const en: Dict = {
       heroDescription:
         "AsisAcademy was born in Ayacucho to replace spreadsheets and improvised chats: one source of truth, with role-based access.",
       teamTitle: "RYJEC team",
-      teamDescription:
-        "We are a young RYJEC team. When we publish individual profiles with authorized names and photos, they will appear here. Until then, we prefer not to invent biographies.",
+      teamDescription: "The RYJEC team building AsisAcademy.",
+      teamCaption: "RYJEC team",
     },
     contacto: {
       metaTitle: "Contact",
@@ -531,6 +537,7 @@ export const en: Dict = {
       formTitle: "Request form",
       formDescription: "Fill in the details or write to us on WhatsApp.",
       whatsappLabel: "Commercial WhatsApp",
+      phonesTitle: "Phone numbers",
       afterTitle: "What happens next",
       afterSteps: [
         { title: "We understand.", text: "We read your school context." },

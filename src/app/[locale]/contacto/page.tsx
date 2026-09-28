@@ -61,6 +61,23 @@ export default async function ContactoPage({ params }: Props) {
               </a>
               <p className="mt-2 text-sm text-muted">{dict.cta.pilot}</p>
             </div>
+            <div>
+              <h2 className="font-[family-name:var(--font-syne)] text-xl font-semibold text-ink">
+                {t.phonesTitle}
+              </h2>
+              <ul className="mt-3 space-y-2">
+                {dict.site.phones.map((phone) => (
+                  <li key={phone}>
+                    <a
+                      href={`tel:${phone.replace(/\s/g, "")}`}
+                      className="font-medium text-ink underline-offset-2 hover:text-primary hover:underline"
+                    >
+                      {phone}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </aside>
         </div>
       </Section>

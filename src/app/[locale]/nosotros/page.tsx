@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { CtaBand } from "@/components/home/CtaBand";
 import { PageHero } from "@/components/layout/PageHero";
 import { Reveal } from "@/components/ui/Reveal";
@@ -41,17 +42,19 @@ export default async function NosotrosPage({ params }: Props) {
       </Section>
       <Section band>
         <SectionHeading title={t.teamTitle} description={t.teamDescription} />
-        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {[1, 2, 3, 4].map((n) => (
-            <div
-              key={n}
-              className="rounded-[var(--radius-lg)] border border-dashed border-border bg-surface/60 p-6 text-center"
-            >
-              <div className="mx-auto h-16 w-16 rounded-full bg-primary-soft" aria-hidden />
-              <p className="mt-4 text-sm text-muted">{dict.site.parentBrand}</p>
-            </div>
-          ))}
-        </div>
+        <figure className="mx-auto mt-8 max-w-4xl">
+          <div className="overflow-hidden rounded-[var(--radius-lg)] border border-border bg-surface shadow-md">
+            <Image
+              src="/images/equipo.jpg"
+              alt={t.teamCaption}
+              width={1200}
+              height={900}
+              className="h-auto w-full object-cover"
+              sizes="(max-width: 1024px) 100vw, 56rem"
+            />
+          </div>
+          <figcaption className="mt-3 text-center text-sm text-muted">{t.teamCaption}</figcaption>
+        </figure>
       </Section>
       <CtaBand locale={locale} dict={dict} />
     </>

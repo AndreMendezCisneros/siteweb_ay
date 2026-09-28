@@ -59,6 +59,29 @@ export function MessengerAppSection({
         ))}
       </div>
 
+      {app.promo ? (
+        <Reveal>
+          <figure className="mx-auto mt-10 w-full max-w-[16rem]">
+            <div className="overflow-hidden rounded-[1.4rem] border border-border bg-ink shadow-md">
+              <div className="relative aspect-[9/16] w-full">
+                <iframe
+                  src={`https://www.youtube-nocookie.com/embed/${app.promo.youtubeId}`}
+                  title={app.promo.title}
+                  className="absolute inset-0 h-full w-full"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <figcaption className="mt-3 text-center text-sm font-semibold text-ink">
+              {app.promo.title}
+            </figcaption>
+          </figure>
+        </Reveal>
+      ) : null}
+
       {app.videos?.length ? (
         <div className="mt-10 grid gap-6 md:grid-cols-2">
           {app.videos.map((video, index) => (

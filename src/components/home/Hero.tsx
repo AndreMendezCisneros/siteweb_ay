@@ -1,7 +1,7 @@
 import Image from "next/image";
+import { HeroVideo } from "@/components/home/HeroVideo";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
-import { ScreenshotFrame } from "@/components/visuals/ScreenshotFrame";
 import type { Dict } from "@/lib/i18n";
 
 export function Hero({ locale, dict }: { locale: string; dict: Dict }) {
@@ -24,7 +24,7 @@ export function Hero({ locale, dict }: { locale: string; dict: Dict }) {
         className="absolute inset-0 bg-[radial-gradient(ellipse_70%_55%_at_80%_15%,rgb(34_199_242_/_0.22),transparent_55%)]"
         aria-hidden
       />
-      <Container className="relative grid min-h-[calc(100svh-7rem)] items-center gap-10 py-14 lg:grid-cols-[1.05fr_0.95fr] lg:gap-14">
+      <Container className="relative grid min-h-[calc(100svh-7rem)] items-center gap-10 py-14 lg:grid-cols-[0.72fr_1.28fr] lg:gap-10">
         <div className="max-w-xl">
           <p className="animate-fade-up font-[family-name:var(--font-syne)] text-sm font-semibold uppercase tracking-[0.18em] text-white/70">
             {dict.home.heroEyebrow}
@@ -56,14 +56,13 @@ export function Hero({ locale, dict }: { locale: string; dict: Dict }) {
             </Button>
           </div>
         </div>
-        <div className="animate-fade-up w-full max-w-xl justify-self-end" style={{ animationDelay: "240ms" }}>
-          <ScreenshotFrame
-            src="/images/page_inicio.png"
-            alt={dict.productVisuals.heroAlt}
-            caption={dict.ui.mockCaption}
-            priority
-            className="[&_figcaption]:text-white/55 [&_div]:border-white/20"
-          />
+        <div className="animate-fade-up w-full justify-self-stretch" style={{ animationDelay: "240ms" }}>
+          <figure>
+            <div className="overflow-hidden rounded-[1.1rem] border border-white/20 bg-ink shadow-lg">
+              <HeroVideo title={dict.home.heroVideoTitle} />
+            </div>
+            <figcaption className="mt-3 text-xs text-white/55">{dict.home.heroVideoTitle}</figcaption>
+          </figure>
         </div>
       </Container>
     </section>

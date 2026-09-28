@@ -18,6 +18,7 @@ export const quy: Dict = {
       contact: "contacto@ryjec.com",
     },
     phone: "+51 949 261 503",
+    phones: ["+51 926 764 186", "+51 947 854 586", "+51 900 116 737"],
     whatsappDigits: "51949261503",
   },
   cta: {
@@ -213,6 +214,10 @@ export const quy: Dict = {
       { src: "/images/app_incidencia.jpg", label: "Incidencias" },
       { src: "/images/app_perfil.jpg", label: "Perfil" },
     ],
+    promo: {
+      title: "Promo video",
+      youtubeId: "1TIvseXgww4",
+    },
     videos: [
       {
         title: "Imaynataq appta llamkachiy",
@@ -408,6 +413,7 @@ export const quy: Dict = {
   },
   home: {
     heroEyebrow: "AsisAcademy · RYJEC",
+    heroVideoTitle: "AsisAcademy video",
     problemEyebrow: "Sasachakuywan propuesta",
     problemTitle: "Ch'eqerisqa planillakunamanta huklla cheqaq willakuyman",
     problemDescription:
@@ -519,8 +525,8 @@ export const quy: Dict = {
       heroDescription:
         "AsisAcademyqa Ayacuchopi paqarin planillakunata improvisado chatkunata reemplazanapaq: huklla cheqaq willakuy, rolman hina yaykuywan.",
       teamTitle: "RYJEC equipo",
-      teamDescription:
-        "RYJEC-pa joven equiponmi kayku. Suti fotoyuq autorizasqa perfilkunata publicaptinchikqa kaypim rikurinqaku. Chaykamaqa manam biografíakunata inventayta munaniku.",
+      teamDescription: "AsisAcademyta ruwaq RYJEC equipo.",
+      teamCaption: "RYJEC equipo",
     },
     contacto: {
       metaTitle: "Rimanakuy",
@@ -532,6 +538,7 @@ export const quy: Dict = {
       formTitle: "Mañakuy formulario",
       formDescription: "Datokunata hunt'achiy utaq WhatsAppwan qillqawayku.",
       whatsappLabel: "Comercial WhatsApp",
+      phonesTitle: "Teléfonos",
       afterTitle: "Qatiqpi ima kan",
       afterSteps: [
         { title: "Jap'inchik.", text: "Yachay wasiykipa contextota ñawinchayku." },

@@ -15,6 +15,7 @@ export const es = {
       contact: "contacto@ryjec.com",
     },
     phone: "+51 949 261 503",
+    phones: ["+51 926 764 186", "+51 947 854 586", "+51 900 116 737"],
     whatsappDigits: "51949261503",
   },
   cta: {
@@ -210,6 +211,10 @@ export const es = {
       { src: "/images/app_incidencia.jpg", label: "Incidencias" },
       { src: "/images/app_perfil.jpg", label: "Perfil" },
     ],
+    promo: {
+      title: "Video promocional",
+      youtubeId: "1TIvseXgww4",
+    },
     videos: [
       {
         title: "Cómo usar la app",
@@ -407,6 +412,7 @@ export const es = {
   },
   home: {
     heroEyebrow: "AsisAcademy · RYJEC",
+    heroVideoTitle: "Video de AsisAcademy",
     problemEyebrow: "El problema y la propuesta",
     problemTitle: "De planillas dispersas a una sola fuente de verdad",
     problemDescription:
@@ -517,8 +523,8 @@ export const es = {
       heroDescription:
         "AsisAcademy nace en Ayacucho para reemplazar planillas y chats improvisados: una sola fuente de verdad, con accesos por rol.",
       teamTitle: "Equipo RYJEC",
-      teamDescription:
-        "Somos un equipo joven de RYJEC. Cuando publiquemos perfiles individuales con nombre y foto autorizados, aparecerán aquí. Mientras tanto, preferimos no inventar biografías.",
+      teamDescription: "El equipo de RYJEC que construye AsisAcademy.",
+      teamCaption: "Equipo RYJEC",
     },
     contacto: {
       metaTitle: "Contacto",
@@ -530,6 +536,7 @@ export const es = {
       formTitle: "Formulario de solicitud",
       formDescription: "Completa los datos o escríbenos por WhatsApp.",
       whatsappLabel: "WhatsApp comercial",
+      phonesTitle: "Teléfonos",
       afterTitle: "Qué pasa después",
       afterSteps: [
         { title: "Entendemos.", text: "Leemos el contexto de tu colegio." },
