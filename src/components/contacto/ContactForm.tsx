@@ -72,14 +72,14 @@ export function ContactForm({
   }
 
   const fieldClass =
-    "mt-2 w-full rounded-[2px] border-2 bg-surface px-4 py-3 text-sm outline-none transition focus:ring-0";
-  const ok = "border-ink focus:border-accent-2";
+    "mt-2 w-full rounded-[var(--radius-md)] border bg-surface px-4 py-3 text-sm outline-none transition focus:ring-2 focus:ring-primary/20";
+  const ok = "border-border focus:border-primary";
   const err = "border-error focus:border-error";
 
   if (status === "success") {
     return (
-      <div className="border-2 border-ink bg-surface p-6" role="status">
-        <h3 className="font-display text-xl font-semibold text-ink">
+      <div className="rounded-[var(--radius-lg)] border border-success/30 bg-primary-soft/50 p-6" role="status">
+        <h3 className="font-[family-name:var(--font-syne)] text-xl font-semibold text-ink">
           {t.success.title}
         </h3>
         <p className="mt-3 text-sm text-muted">{message}</p>
@@ -87,7 +87,7 @@ export function ContactForm({
           {mailto ? (
             <a
               href={mailto}
-              className="inline-flex items-center justify-center rounded-[2px] border-2 border-ink bg-surface px-5 py-3 text-sm font-semibold text-accent-2"
+              className="inline-flex items-center justify-center rounded-[var(--radius-md)] border border-border bg-surface px-5 py-3 text-sm font-semibold text-primary"
             >
               {t.success.openEmail}
             </a>
