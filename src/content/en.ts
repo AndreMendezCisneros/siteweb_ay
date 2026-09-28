@@ -4,12 +4,12 @@ export const en: Dict = {
   locale: "en",
   site: {
     name: "AsisAcademy",
-    tagline: "A platform to manage and connect your school",
+    tagline: "Attendance and follow-up for institutions that take teaching seriously",
     description:
-      "Centralize attendance, incidents, ID cards, reports, family portal and messaging — with role-based access and a single source of truth.",
+      "QR scanning at the door, same-day indicators for leadership, and direct family communication. Designed for institutes, academies, and schools.",
     definition:
-      "AsisAcademy is a RYJEC technology platform for managing and digitizing educational institutions.",
-    promise: "Useful technology for schools: one source of truth, with role-based access.",
+      "AsisAcademy is a RYJEC technology platform for the day-to-day operations of institutes, academies, CETPROs, and schools.",
+    promise: "One source of truth, with role-based access. Built for institutions that take teaching seriously.",
     url: "https://asisacademy.com",
     ogLocale: "en_US",
     parentBrand: "RYJEC",
@@ -29,12 +29,12 @@ export const en: Dict = {
     seeModules: "See modules",
     seePlans: "See plans",
     howItWorks: "How it works",
-    bandTitle: "Shall we bring AsisAcademy to your school?",
+    bandTitle: "Shall we bring AsisAcademy to your institution?",
     bandDescription:
       "We support installation, training and branded ID cards. Start with a free 30-day trial.",
   },
   announcement: {
-    text: "Implement AsisAcademy in your school · free 30-day trial",
+    text: "Implement AsisAcademy in your institution · free 30-day trial",
     cta: "Request free trial",
   },
   nav: [
@@ -111,9 +111,9 @@ export const en: Dict = {
       slug: "carnets",
       name: "ID cards",
       status: "available",
-      summary: "Credentials with the school brand, ready to scan.",
+      summary: "Credentials with the institutional brand, ready to scan.",
       description:
-        "Institutional credentials customized with the school brand, ready for the gate scanning flow.",
+        "Institutional credentials customized with the institution brand, ready for the gate scanning flow.",
       benefits: [
         "Institutional brand on every card",
         "Ready for QR or barcode",
@@ -280,7 +280,7 @@ export const en: Dict = {
     {
       step: "01",
       title: "Understand",
-      description: "We learn the school: gate, schedules, roles and what hurts today.",
+      description: "We learn the institution: gate, schedules, roles and what hurts today.",
     },
     {
       step: "02",
@@ -290,7 +290,7 @@ export const en: Dict = {
     {
       step: "03",
       title: "Propose",
-      description: "We set up a free 30-day trial with a small group, without stopping the school.",
+      description: "We set up a free 30-day trial with a small group, without stopping operations.",
     },
     {
       step: "04",
@@ -306,14 +306,32 @@ export const en: Dict = {
       step: "06",
       title: "Evolve",
       description:
-        "When the school grows, the platform can grow too: payments and grades remain upcoming.",
+        "When the institution grows, the platform can grow too: payments and grades remain upcoming.",
     },
   ],
   audiences: [
     {
+      slug: "institutos",
+      name: "Institutes and CETPROs",
+      summary:
+        "Designed for higher institutes and CETPROs that need gate control, incidents, and family communication.",
+    },
+    {
+      slug: "academias",
+      name: "Academies and language centers",
+      summary:
+        "Built for pre-university academies and language centers with shifts and daily follow-up. Not a current client: it is the segment the product is designed for.",
+    },
+    {
+      slug: "colegios",
+      name: "Schools",
+      summary:
+        "It also serves schools. It currently runs in production at I.E. San Ramón and Colegio Jean Piaget, in Ayacucho-Huamanga.",
+    },
+    {
       slug: "direccion",
       name: "Leadership / Admin",
-      summary: "Configure the school, see indicators, reports and recurrence alerts.",
+      summary: "Configure the institution, see indicators, reports and recurrence alerts.",
     },
     {
       slug: "docentes",
@@ -328,15 +346,15 @@ export const en: Dict = {
   ],
   faq: [
     {
-      q: "What kind of school is it for?",
-      a: "AsisAcademy is for educational institutions that need gate control, incidents and family communication. It currently operates in schools in Ayacucho-Huamanga.",
+      q: "What kind of institution is it for?",
+      a: "It is designed for institutes, pre-university academies, language centers, CETPROs, and schools that need gate control, incidents, and family communication. It currently runs in production at two schools in Ayacucho-Huamanga.",
     },
     {
       q: "How does the free trial work?",
       a: "30 days with a small group (grade/section), installation, training and support. Commercial WhatsApp: 949 261 503.",
     },
     {
-      q: "What does the school need to start?",
+      q: "What does the institution need to start?",
       a: "Gate staff, a leadership contact and basic student and schedule data. We configure the system and ID cards.",
     },
     {
@@ -353,7 +371,7 @@ export const en: Dict = {
     },
   ],
   productVisuals: {
-    galleryEyebrow: "Product",
+    galleryEyebrow: "product inside",
     galleryTitle: "This is AsisAcademy inside",
     galleryDescription:
       "Real screens: home, attendance, incidents, student registry, catalogs, reports, admin and parent portal.",
@@ -370,9 +388,9 @@ export const en: Dict = {
       { key: "administrador", label: "Settings" },
       { key: "portal", label: "Parent portal" },
     ],
-    carnetTitle: "ID cards with your school brand",
+    carnetTitle: "ID cards with your institution brand",
     carnetDescription:
-      "We design scan-ready credentials with typography, colors and details aligned to your institutional identity. Each school looks distinct without breaking the gate flow.",
+      "We design scan-ready credentials with typography, colors and details aligned to your institutional identity. Each institution looks distinct without breaking the gate flow.",
     carnetAlt: "AsisAcademy student ID card example",
     carnetPoints: [
       "Institutional logo and colors on the card",
@@ -382,8 +400,8 @@ export const en: Dict = {
     ],
   },
   personalization: {
-    eyebrow: "Personalization",
-    title: "Your school, with its own visual identity",
+    eyebrow: "personalization",
+    title: "Your institution, with its own visual identity",
     description:
       "AsisAcademy does not force a single look. We adapt colors, logo, ID cards and screens to the institution: the platform feels yours from day one.",
     features: [
@@ -395,19 +413,19 @@ export const en: Dict = {
     examplesTitle: "Illustrative institutional looks",
     examples: [
       {
-        name: "Colegio Verde Andes",
-        vibe: "Institutional greens on menu and buttons; ID card with own crest and calm typography.",
-        accent: "#15803d",
+        name: "Instituto Andino",
+        vibe: "Forest green on menu and buttons; ID card with serif type and its own mark.",
+        accent: "#14532D",
       },
       {
-        name: "Instituto Horizonte",
-        vibe: "Navy sidebar and cyan progress; parent portal with the same identity.",
-        accent: "#1d4ed8",
+        name: "Academia Norte",
+        vibe: "Amber accents and ink borders; family portal with the same visual rules.",
+        accent: "#E8A317",
       },
       {
-        name: "Liceo Aurora",
-        vibe: "AsisAcademy purple + tech cyan; ID cards with brand gradient and circular photo.",
-        accent: "#5b21e6",
+        name: "CETPRO Taller",
+        vibe: "Cream and ink, with the institutional logo on ID cards and headers.",
+        accent: "#1B1B18",
       },
     ],
     note: "Names above are illustrative personalization examples. They are not additional production clients beyond the institutions listed on this site.",
@@ -419,7 +437,7 @@ export const en: Dict = {
     heroSubtitle:
       "QR scanning at the door, same-day indicators for leadership, and direct family communication. Designed for institutes, academies, and schools.",
     heroVideoTitle: "AsisAcademy video",
-    problemEyebrow: "The problem and the proposal",
+    problemEyebrow: "02 — the problem and the proposal",
     problemTitle: "From scattered sheets to a single source of truth",
     problemDescription:
       "When attendance lives on paper and communication in improvised chats, leadership decides late. AsisAcademy centralizes everything with role-based access.",
@@ -435,31 +453,32 @@ export const en: Dict = {
       "Authorized portal and messaging in a dedicated app for families.",
       "A single source of truth, ready to grow with payments and grades (upcoming).",
     ],
-    modulesEyebrow: "Modules",
+    modulesEyebrow: "03 — modules",
     modulesTitle: "What you can use today",
     modulesDescription:
       "Six modules in production. Everything else is marked coming soon — we do not sell it as ready.",
-    methodEyebrow: "How it works",
+    methodEyebrow: "04 — how it works",
     methodTitle: "What each stage involves",
     methodDescription:
-      "Six stages. A long-term relationship: from the free trial to a platform that can grow with the school.",
-    audiencesEyebrow: "Audiences",
-    audiencesTitle: "Who AsisAcademy is for",
-    audiencesDescription: "Each profile sees what they need. The information is the same; access is not.",
-    roadmapEyebrow: "Roadmap",
+      "Six stages. A long-term relationship: from the free trial to a platform that can grow with the institution.",
+    audiencesEyebrow: "05 — audiences",
+    audiencesTitle: "Who AsisAcademy is designed for",
+    audiencesDescription:
+      "Institutes, academies, and schools. Each profile sees what they need. The information is the same; access is not.",
+    roadmapEyebrow: "06 — roadmap",
     roadmapTitle: "A platform that grows with you",
     roadmapDescription: "These modules are not available yet. They are not sold as functional today.",
-    institutionsEyebrow: "Already using AsisAcademy",
+    institutionsEyebrow: "01 — institutions in production",
     institutionsTitle: "Institutions in production",
     institutionsDescription:
-      "Schools already managing attendance and incidents with the platform.",
-    plansEyebrow: "Plans",
+      "Schools that already run attendance and incidents on the platform. Institutes and academies are a design segment, not current clients.",
+    plansEyebrow: "07 — plans",
     plansTitle: "Choose the scope, not an invented price",
     plansDescription:
       "Four configurable levels. No published rates: request the free trial and we build the proposal.",
-    faqEyebrow: "FAQ",
+    faqEyebrow: "08 — faq",
     faqTitle: "Frequently asked questions",
-    valueTitle: "Useful technology for schools, built by RYJEC",
+    valueTitle: "Useful technology for institutions that take teaching seriously",
     valuePoints: [
       {
         title: "One source of truth",
@@ -470,7 +489,7 @@ export const en: Dict = {
         text: "Each profile sees what they should. The information is the same; the permission is not.",
       },
       {
-        title: "Grows with the school",
+        title: "Grows with the institution",
         text: "Six modules in production today. Payments and grades are marked upcoming, not sold.",
       },
     ],
@@ -479,11 +498,11 @@ export const en: Dict = {
     plataforma: {
       metaTitle: "Platform",
       metaDescription:
-        "AsisAcademy: the school's operational base with attendance, incidents, ID cards, portal and messaging.",
-      heroEyebrow: "Platform",
+        "AsisAcademy: operational base for institutes, academies, and schools, with attendance, incidents, ID cards, portal and messaging.",
+      heroEyebrow: "platform",
       heroTitle: "Not just attendance control",
       heroDescription:
-        "It is the school's operational base: scanning, incident history, indicators, credentials, family portal and messaging in a dedicated app.",
+        "It is the institution's operational base: scanning, incident history, indicators, credentials, family portal and messaging in a dedicated app.",
     },
     modulos: {
       metaTitle: "Modules",
@@ -497,36 +516,36 @@ export const en: Dict = {
     },
     comoFunciona: {
       metaTitle: "How it works",
-      metaDescription: "AsisAcademy rollout: from free trial to school evolution.",
-      heroEyebrow: "How it works",
+      metaDescription: "AsisAcademy rollout: from free trial to institutional evolution.",
+      heroEyebrow: "how it works",
       heroTitle: "From pilot to a platform that grows",
       heroDescription:
-        "We work with a clear process to implement AsisAcademy without stopping school operations.",
+        "We work with a clear process to implement AsisAcademy without stopping operations.",
     },
     instituciones: {
       metaTitle: "Institutions",
       metaDescription: "Institutions already using AsisAcademy in production.",
-      heroEyebrow: "Institutions",
-      heroTitle: "Institutions that trust AsisAcademy",
+      heroEyebrow: "institutions",
+      heroTitle: "Institutions already running AsisAcademy",
       heroDescription:
-        "Schools in Ayacucho-Huamanga already managing attendance and incidents with the platform.",
+        "Schools in Ayacucho-Huamanga already managing attendance and incidents with the platform. Institutes and academies are not listed as current clients.",
     },
     planes: {
       metaTitle: "Plans",
       metaDescription: "Configurable AsisAcademy plans. No invented prices.",
-      heroEyebrow: "Plans",
+      heroEyebrow: "plans",
       heroTitle: "Choose the scope",
       heroDescription:
-        "Four levels. Request the free trial and we build the proposal for your school.",
+        "Four levels. Request the free trial and we build the proposal for your institution.",
       note: "We do not publish rates. Each proposal is defined from your real context.",
     },
     nosotros: {
       metaTitle: "About us",
       metaDescription: "AsisAcademy is a RYJEC brand born in Ayacucho.",
-      heroEyebrow: "About us",
-      heroTitle: "Useful technology for schools, built by RYJEC",
+      heroEyebrow: "about us",
+      heroTitle: "Useful technology for institutions that take teaching seriously",
       heroDescription:
-        "AsisAcademy was born in Ayacucho to replace spreadsheets and improvised chats: one source of truth, with role-based access.",
+        "AsisAcademy was born in Ayacucho to replace spreadsheets and improvised chats: one source of truth, with role-based access. Designed for institutes, academies, and schools.",
       teamTitle: "RYJEC team",
       teamDescription: "The RYJEC team building AsisAcademy.",
       teamCaption: "RYJEC team",
@@ -534,17 +553,17 @@ export const en: Dict = {
     contacto: {
       metaTitle: "Contact",
       metaDescription: "Request your free AsisAcademy trial. WhatsApp 949 261 503.",
-      heroEyebrow: "Contact",
+      heroEyebrow: "contact",
       heroTitle: "Request your free trial",
       heroDescription:
-        "Tell us about your school. We reply by WhatsApp or email with clarity about the 30-day pilot.",
+        "Tell us about your institution. We reply by WhatsApp or email with clarity about the 30-day pilot.",
       formTitle: "Request form",
       formDescription: "Fill in the details or write to us on WhatsApp.",
       whatsappLabel: "Commercial WhatsApp",
       phonesTitle: "Phone numbers",
       afterTitle: "What happens next",
       afterSteps: [
-        { title: "We understand.", text: "We read your school context." },
+        { title: "We understand.", text: "We read your institution context." },
         { title: "We respond.", text: "We write back with next steps for the pilot." },
         { title: "We propose.", text: "If there is a fit, we set up the free 30-day trial." },
       ],
@@ -625,16 +644,16 @@ export const en: Dict = {
   form: {
     name: "Name",
     email: "Email",
-    school: "School",
+    school: "Institution",
     phone: "Phone (optional)",
-    need: "Tell us about your school",
+    need: "Tell us about your institution",
     needPlaceholder: "Approximate size, gate, what you want to improve…",
     sending: "Sending…",
     errors: {
       name: "Enter your name.",
       email: "Enter your email.",
       emailInvalid: "Enter a valid email.",
-      school: "Enter the school name.",
+      school: "Enter the institution name.",
       need: "Tell us a bit more.",
       generic: "Something went wrong. Write to us on WhatsApp at 949 261 503.",
     },
@@ -646,7 +665,7 @@ export const en: Dict = {
     },
   },
   footer: {
-    tagline: "School management platform. A brand by RYJEC.",
+    tagline: "Attendance and follow-up for institutions that take teaching seriously. A brand by RYJEC.",
     product: "Product",
     company: "Company",
     legal: "Legal",
