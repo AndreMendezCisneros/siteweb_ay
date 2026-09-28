@@ -78,7 +78,7 @@ export function Footer({ locale, dict }: { locale: string; dict: Dict }) {
       <div className="border-t border-border">
         <Container className="flex flex-col gap-2 py-5 text-xs text-muted sm:flex-row sm:justify-between">
           <p>
-            © {new Date().getFullYear()} {site.parentBrand} · {site.name}. {footer.rights}
+            © 2026 {site.parentBrand} · {site.name}. {footer.rights}
           </p>
           <p>{site.promise}</p>
         </Container>
