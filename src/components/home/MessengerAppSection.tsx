@@ -39,8 +39,8 @@ export function MessengerAppSection({
         {app.screens.map((screen, index) => (
           <Reveal key={screen.src} delay={index * 70}>
             <figure className="mx-auto w-full max-w-[12.5rem] sm:max-w-[13.5rem]">
-              <div className="ink-frame p-[0.45rem]">
-                <div className="overflow-hidden bg-surface">
+              <div className="overflow-hidden rounded-[1.65rem] border border-border bg-ink p-[0.45rem] shadow-md">
+                <div className="overflow-hidden rounded-[1.25rem] bg-surface">
                   <Image
                     src={screen.src}
                     alt={screen.label}
@@ -62,7 +62,7 @@ export function MessengerAppSection({
       {app.promo ? (
         <Reveal>
           <figure className="mx-auto mt-10 w-full max-w-[16rem]">
-            <div className="ink-frame">
+            <div className="overflow-hidden rounded-[1.4rem] border border-border bg-ink shadow-md">
               <div className="relative aspect-[9/16] w-full">
                 <iframe
                   src={`https://www.youtube-nocookie.com/embed/${app.promo.youtubeId}`}
@@ -87,7 +87,7 @@ export function MessengerAppSection({
           {app.videos.map((video, index) => (
             <Reveal key={video.youtubeId} delay={index * 80}>
               <figure>
-                <div className="ink-frame">
+                <div className="overflow-hidden rounded-[var(--radius-lg)] border border-border bg-ink shadow-md">
                   <div className="relative aspect-video w-full">
                     <iframe
                       src={`https://www.youtube-nocookie.com/embed/${video.youtubeId}`}
