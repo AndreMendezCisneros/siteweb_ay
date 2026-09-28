@@ -3,6 +3,7 @@ import Link from "next/link";
 
 export function Logo({
   className = "",
+  light = false,
   href = "/",
 }: {
   className?: string;
@@ -12,7 +13,7 @@ export function Logo({
   return (
     <Link
       href={href}
-      className={`inline-flex shrink-0 items-center gap-2.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink ${className}`}
+      className={`inline-flex shrink-0 items-center gap-2.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary ${className}`}
       aria-label="AsisAcademy — Inicio"
     >
       <Image
@@ -23,7 +24,13 @@ export function Logo({
         className="h-10 w-10 object-contain"
         priority
       />
-      <span className="font-display text-xl font-semibold tracking-tight text-ink">AsisAcademy</span>
+      <span
+        className={`font-[family-name:var(--font-syne)] text-xl font-bold tracking-[0.02em] ${
+          light ? "text-white" : "text-ink"
+        }`}
+      >
+        AsisAcademy
+      </span>
     </Link>
   );
 }
