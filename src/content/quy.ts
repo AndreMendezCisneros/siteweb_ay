@@ -413,6 +413,10 @@ export const quy: Dict = {
   },
   home: {
     heroEyebrow: "AsisAcademy · RYJEC",
+    heroLabel: "01 — Asistencia gestion",
+    heroTitle: "Asistencia nisqawan qatiy, yachachiq institucioneskunapaq.",
+    heroSubtitle:
+      "Punkupi QR, direcciónpaq kunan punchaw indicadores, familiakunawan willakuy. Institutokunapaq, academiakunapaq, colegiokunapaq ruwasqa.",
     heroVideoTitle: "AsisAcademy video",
     problemEyebrow: "Sasachakuywan propuesta",
     problemTitle: "Ch'eqerisqa planillakunamanta huklla cheqaq willakuyman",

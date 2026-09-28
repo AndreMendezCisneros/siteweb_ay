@@ -414,6 +414,10 @@ export const en: Dict = {
   },
   home: {
     heroEyebrow: "AsisAcademy · RYJEC",
+    heroLabel: "01 — Attendance operations",
+    heroTitle: "Attendance and follow-up for institutions that take teaching seriously.",
+    heroSubtitle:
+      "QR scanning at the door, same-day indicators for leadership, and direct family communication. Designed for institutes, academies, and schools.",
     heroVideoTitle: "AsisAcademy video",
     problemEyebrow: "The problem and the proposal",
     problemTitle: "From scattered sheets to a single source of truth",
