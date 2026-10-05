@@ -228,20 +228,20 @@ export const es = {
   },
   institutions: [
     {
-      slug: "san-ramon",
-      name: "I.E. San Ramón",
-      location: "Ayacucho-Huamanga",
+      slug: "institucion-a",
+      name: "Institución A",
+      location: "Ayacucho",
       status: "En producción",
-      description: "Colegio que ya gestiona asistencia e incidencias con AsisAcademy.",
-      href: "https://sanramon.asisacademy.com",
+      description: "Institución educativa que ya gestiona asistencia e incidencias con AsisAcademy.",
+      href: "#",
     },
     {
-      slug: "jean-piaget",
-      name: "Colegio Jean Piaget",
-      location: "Ayacucho-Huamanga",
+      slug: "institucion-b",
+      name: "Institución B",
+      location: "Ayacucho",
       status: "En producción",
-      description: "Colegio que ya opera con AsisAcademy en producción.",
-      href: "https://jeanpiaget.asisacademy.com",
+      description: "Institución educativa que ya opera con AsisAcademy en producción.",
+      href: "#",
     },
   ],
   plans: [
@@ -324,7 +324,7 @@ export const es = {
       slug: "colegios",
       name: "Colegios",
       summary:
-        "También sirve a colegios. Hoy opera en producción en I.E. San Ramón y Colegio Jean Piaget, en Ayacucho-Huamanga.",
+        "También sirve a colegios. Hoy opera en producción en instituciones educativas de Ayacucho.",
     },
     {
       slug: "direccion",

@@ -230,20 +230,20 @@ export const en: Dict = {
   },
   institutions: [
     {
-      slug: "san-ramon",
-      name: "I.E. San Ramón",
-      location: "Ayacucho-Huamanga",
+      slug: "institucion-a",
+      name: "Institution A",
+      location: "Ayacucho",
       status: "In production",
-      description: "A school already managing attendance and incidents with AsisAcademy.",
-      href: "https://sanramon.asisacademy.com",
+      description: "An educational institution already managing attendance and incidents with AsisAcademy.",
+      href: "#",
     },
     {
-      slug: "jean-piaget",
-      name: "Colegio Jean Piaget",
-      location: "Ayacucho-Huamanga",
+      slug: "institucion-b",
+      name: "Institution B",
+      location: "Ayacucho",
       status: "In production",
-      description: "A school already operating AsisAcademy in production.",
-      href: "https://jeanpiaget.asisacademy.com",
+      description: "An educational institution already operating AsisAcademy in production.",
+      href: "#",
     },
   ],
   plans: [
@@ -326,7 +326,7 @@ export const en: Dict = {
       slug: "colegios",
       name: "Schools",
       summary:
-        "It also serves schools. It currently runs in production at I.E. San Ramón and Colegio Jean Piaget, in Ayacucho-Huamanga.",
+        "It also serves schools. It currently runs in production at educational institutions in Ayacucho.",
     },
     {
       slug: "direccion",
